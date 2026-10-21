@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>产品思维 · 两节课</title>
+<meta name="description" content="产品思维两节课：A 面看见人，B 面做选择。跟着网易云音乐的故事，学会看见真需求、在一堆需求里做选择。">
+<script>
+  try { var t = JSON.parse(localStorage.getItem("pt.theme")); if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap">
+<link rel="stylesheet" href="assets/course.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2317191F'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23A9472E'/%3E%3Ccircle cx='16' cy='16' r='1.4' fill='%23F4F0E8'/%3E%3C/svg%3E">
+<style>
+  .home-hero .wrap { grid-template-columns: 1fr 1.05fr; }
+  .home-hero h1 { font-size: clamp(44px, 7vw, 84px); }
+  .home-hero figure { margin: 0; }
+  .home-hero figure img { width: 100%; border-radius: 16px; box-shadow: var(--shadow); }
+  @media (max-width: 860px) { .home-hero .wrap { grid-template-columns: 1fr; } .home-hero figure { order: -1; } }
+</style>
+</head>
+<body data-side="a">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="dot" aria-hidden="true"></span>产品思维</a>
+    <nav aria-label="页面导航">
+      <a href="a-side/">A 面</a>
+      <a href="b-side/">B 面</a>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="切换深浅色"></button>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+  <section class="hero home-hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">两节课 · 一张唱片</p>
+        <h1>产品思维</h1>
+        <p class="sub">A 面看见人，B 面做选择</p>
+        <div class="prose">
+          <p>AI 让“把东西做出来”变得很便宜。难的变成了：<strong>想清楚做什么、给谁做</strong>。</p>
+          <p>这两节课跟着网易云音乐的故事走：它怎样从用户的一句话里听出真需求，又怎样在一堆需求里，挑出那个四两拨千斤的切口。最后，你会把自己的点子写成一张体检卡、一页纸，再交给 AI 做出第一个版本。</p>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/img/home.webp" alt="插画：一张唱片，左半边的纹路是一圈圈戴耳机的听众，右半边的纹路变成了许多岔路，一个小人站在路口选方向" width="1400" height="933">
+      </figure>
+    </div>
+  </section>
+
+  <section class="track">
+    <div class="wrap">
+      <div class="sides">
+        <a class="side-card fx" href="a-side/">
+          <div class="record" aria-hidden="true">
+            <div class="sleeve"><img src="assets/img/a-cover.webp" alt="" width="900" height="900"></div>
+            <div class="disc"><div class="disc-spin"><div class="label"><span><b>A</b><small>SIDE · 看见人</small></span></div></div><div class="hole"></div></div>
+          </div>
+          <span class="k">A 面 · 第一课 · 约 45 分钟</span>
+          <h3>用户说的，不一定是用户要的</h3>
+          <p>怎么看见真需求。配套视频：第一集《看见人》约 9 分钟。</p>
+          <ol>
+            <li>开场：评论区之谜</li>
+            <li>第一招：自己去看，找对人，追问细节</li>
+            <li>第二招：问“为什么”</li>
+            <li>第三招：角色、场景、流程</li>
+            <li>用到你的点子上：需求体检卡</li>
+          </ol>
+          <span class="go">播放 A 面 →</span>
+        </a>
+        <a class="side-card b fx" href="b-side/">
+          <div class="record" aria-hidden="true">
+            <div class="sleeve"><img src="assets/img/b-cover.webp" alt="" width="900" height="900"></div>
+            <div class="disc"><div class="disc-spin"><div class="label"><span><b>B</b><small>SIDE · 做选择</small></span></div></div><div class="hole"></div></div>
+          </div>
+          <span class="k">B 面 · 第二课 · 约 45 分钟</span>
+          <h3>做产品，就是做选择</h3>
+          <p>做什么、先做什么、不做什么。配套视频：第二集《做选择》约 10 分钟。</p>
+          <ol>
+            <li>开场：你先做哪个</li>
+            <li>找切入点：三个圈</li>
+            <li>第一版只留一个</li>
+            <li>有时候要对用户说“不”</li>
+            <li>什么能带来口碑</li>
+            <li>拿不准怎么办：我的产品一页纸</li>
+          </ol>
+          <span class="go">播放 B 面 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="track">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">怎么用这两节课</p>
+        <h2>先听，再动手，最后交给 AI</h2>
+      </header>
+      <div class="howto fx">
+        <div><b>先看视频</b><span>每一面配一集 10 分钟左右的视频，把故事和方法先过一遍。</span></div>
+        <div><b>在页面上动手</b><span>每条 Track 都有一个小练习：分拣、追问、拆解、拍板。电脑、手机都能做。</span></div>
+        <div><b>写出你的一页纸</b><span>A 面写需求体检卡，B 面写产品一页纸，一键生成写给 AI 的需求说明。</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>《产品思维》两节课 · 26 Fall AI 语言工具与实操（西语学院微专业）</p>
+  </div>
+</footer>
+
+<script src="assets/course.js"></script>
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>看见人 · 产品思维 A 面</title>
+<meta name="description" content="产品思维第一课：用户说的，不一定是用户要的。用网易云音乐的故事，学会怎么看见真需求。">
+<script>
+  try { var t = JSON.parse(localStorage.getItem("pt.theme")); if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap">
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2317191F'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23A9472E'/%3E%3Ccircle cx='16' cy='16' r='1.4' fill='%23F4F0E8'/%3E%3C/svg%3E">
+</head>
+<body data-side="a">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../"><span class="dot" aria-hidden="true"></span>产品思维</a>
+    <span class="side-tag">A 面 · 看见人</span>
+    <nav aria-label="页面导航">
+      <a class="hide-sm" href="#tracks">曲目</a>
+      <a class="hide-sm" href="#t05">体检卡</a>
+      <a class="hide-sm" href="#check">自测</a>
+      <a class="hide-sm" href="../b-side/">B 面 →</a>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="切换深浅色"></button>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <video muted loop playsinline preload="none" poster="../assets/loop/vinyl-poster.webp" data-src="../assets/loop/vinyl.mp4"></video>
+    </div>
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">A 面 · 看见人</p>
+        <h1>用户说的，<br>不一定是用户要的</h1>
+        <p class="sub">产品思维第一课：怎么看见真需求</p>
+        <ol class="goals" aria-label="学完能做到">
+          <li>不只听用户说了什么，还会追问出他为什么这么说。</li>
+          <li>会用“角色、场景、流程”判断一个点子是真需求还是伪需求。</li>
+          <li>用这两招给自己的点子做一次体检，写出一张需求体检卡。</li>
+        </ol>
+        <p class="meta">
+          <span>⏱ 约 45 分钟</span>
+          <span>▶ 配套视频：第一集《看见人》约 9 分钟</span>
+        </p>
+      </div>
+      <div class="record" role="img" aria-label="唱片封套：一张由许多戴耳机的听众组成的唱片">
+        <div class="sleeve"><img src="../assets/img/a-cover.webp" alt="" width="900" height="900"></div>
+        <div class="disc" aria-hidden="true">
+          <div class="disc-spin"><div class="label"><span><b>A</b><small>SIDE · 看见人</small></span></div></div>
+          <div class="hole"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track intro" id="tracks">
+    <div class="wrap">
+      <div class="intro-grid">
+        <div class="prose fx">
+          <p class="track-no">写在前面</p>
+          <p>在 Vibe Coding 第一课里，我们动手之前先问了四个问题：<strong>谁会用、在什么场景用、现在怎么解决、多痛多频繁</strong>。</p>
+          <p>麻烦在于，这四个答案常常是我们自己想当然，或者是用户随口一说。这一面讲三招，帮你把答案挖实。</p>
+          <p>故事都来自网易云音乐：从 2013 年上线起，它是怎样一步步做出来的。</p>
+        </div>
+        <div class="fx">
+          <p class="track-no">本面曲目</p>
+          <ol class="tracklist">
+            <li><a href="#t01"><span class="no">01</span><span class="t">开场：评论区之谜</span><span class="d">8 分钟</span></a></li>
+            <li><a href="#t02"><span class="no">02</span><span class="t">第一招：自己去看，找对人，追问细节</span><span class="d">10 分钟</span></a></li>
+            <li><a href="#t03"><span class="no">03</span><span class="t">第二招：问“为什么”</span><span class="d">8 分钟</span></a></li>
+            <li><a href="#t04"><span class="no">04</span><span class="t">第三招：角色、场景、流程</span><span class="d">10 分钟</span></a></li>
+            <li><a href="#t05"><span class="no">05</span><span class="t">用到你的点子上：需求体检卡</span><span class="d">15 分钟</span></a></li>
+            <li><a href="#check"><span class="no">✓</span><span class="t">六道题、八个词</span><span class="d">5 分钟</span></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track" id="t01">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 01 · 开场</p>
+        <h2>评论区之谜</h2>
+        <p class="lede">问卷说，几乎没人想评论音乐。后来，评论区成了这个 App 最出名的地方。</p>
+      </header>
+
+      <div class="stats fx" role="group" aria-label="两个数字的对比">
+        <div class="stat"><b>5%</b><span>腾讯企鹅智库几万人的问卷里，<br>说自己想评论音乐的人</span></div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="stat hi"><b>一半以上</b><span>后来网易云每天参与评论的人，<br>占当天活跃用户的比例</span></div>
+      </div>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>网易云音乐很早就上线了评论功能，一开始并没有火。那时业内普遍觉得：听歌是很私人的事，没人想聊；专业乐评早就没人看了；播放器把歌放好就行。问卷数据也站在这一边。</p>
+          <p>2014 年，产品经理小明决定自己去分析。他把热门歌单、排行榜、私人 FM 和每日推荐里的歌曲评论翻了个遍。大部分评论只有“好听”两个字，可有价值的那些，几乎都在讲自己：初恋、前任、暗恋、高三、回不去的童年，还有一代人共同的记忆。</p>
+          <p>先别往下看。下面 10 条评论，你能自己发现这个规律吗？</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/a-t01.webp" alt="插画：夜里的一栋楼，每扇亮着的窗里都有一个戴耳机的人，音符从窗口飘出，在夜空里汇成一条河" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="lab fx" id="lab1">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ①</span>
+          <span class="lab-title">评论分拣</span>
+          <span class="spacer"></span>
+          <button class="btn" type="button" id="lab1-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">把这 10 条评论分成两堆。电脑上可以直接拖；手机上先点一条评论，再点它该去的那一堆。</p>
+          <div id="sorter1"></div>
+          <div class="reveal" id="reveal1" aria-live="polite">
+            <h4>讲自己的那一堆，就是共鸣</h4>
+            <p>写这些评论的人，不是在评价这首歌，而是借一首歌说自己的事。读到的人如果有同样的记忆，就会被打动。小明把这叫作<strong>共鸣</strong>：用户要的不是“评论音乐”，而是找到有同样记忆的人。</p>
+            <p>于是团队很快加了一个很简单的功能：<strong>给评论点赞</strong>。读到心里去的人点一下，写的人马上知道有人懂他。共鸣有了出口，评论区像滚雪球一样火了起来。</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="takeaway fx">
+        <div>
+          <h3>要点</h3>
+          <p>需求往往问不出来。问卷问的是“想不想评论音乐”，用户真正想要的是“被懂得”。这要靠自己去看、去想。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="track" id="t02">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 02 · 第一招</p>
+        <h2>自己去看，找对人，追问细节</h2>
+        <p class="lede">别拿自己的口味代替用户，也别把用户的第一句话当真。</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>小明自己爱听摇滚，一直觉得电子乐就是迪厅里的“土嗨”。可数据告诉他另一件事：电子歌单的播放量常常轻松破十万，电子乐达人每天打开 App 的次数，远高于一般用户。</p>
+          <p>他没有等公司的用研团队排期，而是自己去读评论、找达人聊天：什么时候开始听的？去哪里找新歌？和谁一起听？聊完他判断，电子乐会火。团队开始重点扶持电子乐歌单和达人。一年后，《Fade》火遍大街小巷。</p>
+          <p>找人聊之前，还得先确认找对了人。小明招募访谈对象时，会请对方打开手机，看看听歌记录：<strong>记录不会说谎</strong>。有人自称资深欧美乐迷，记录里却只有一百多首歌，大多是 KTV 里常唱的华语歌。</p>
+          <p>做用户研究要过三关：找的是不是典型用户？听到的是不是真话？结论怎么用到产品上？下面练第二关。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/a-t02.webp" alt="插画：咖啡桌上的一次访谈，一个人边说边比划，另一个人在本子上记录，一把放大镜压在一部手机上" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="lab fx" id="lab2">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ②</span>
+          <span class="lab-title">访谈侦探</span>
+          <span class="spacer"></span>
+          <button class="btn" type="button" id="lab2-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">小明去一座三线城市，访谈一位许嵩的粉丝。她先介绍了自己。每句话后面，你替小明选一个追问。</p>
+          <div class="claims" id="claims"></div>
+          <div class="reveal" id="reveal2" aria-live="polite">
+            <h4>喜欢多年，但不是狂热粉</h4>
+            <div class="compare" id="compare"></div>
+            <p style="margin-top:14px">在三线城市，接触偶像和核心粉丝圈的机会少，追星更多是一个人的事，还没形成一群人的狂热。如果小明只听她的第一句话，就会把产品做给一个并不存在的“狂热粉”。</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="takeaway fx">
+        <div>
+          <h3>要点</h3>
+          <p>像面试官追问简历一样追问：什么时候、怎么开始的、具体多少。用户的第一句话是简历，追问出来的才是真实经历。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="track" id="t03">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 03 · 第二招</p>
+        <h2>问“为什么”</h2>
+        <p class="lede">用户提的往往是一个办法。你要找的，是他想要这个办法的原因。</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>做社区的产品，几乎都收到过同一条需求：“做个勋章系统吧！”很多产品照做了。今天，还有谁记得它们有过勋章？</p>
+          <p>小明的习惯是先问一句：<strong>用户为什么想要勋章？</strong>问下去会发现，同一句话背后藏着好几种完全不同的动机。每一种动机，都可能有比勋章更好的办法。</p>
+          <p>这就是<strong>往本质思考</strong>：不停在第一层，一层一层往下问。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/a-t03.webp" alt="插画：一颗切开的洋葱，一层层分开，中心有一个发光的芯，一只手举着剥下的一层" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="lab fx" id="lab3">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ③</span>
+          <span class="lab-title">剥洋葱</span>
+          <span class="spacer"></span>
+          <button class="btn" type="button" id="lab3-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">点洋葱，一层一层剥开“我想要勋章”背后的动机。</p>
+          <div class="onion-lab">
+            <div>
+              <button class="onion" type="button" id="onion" aria-label="剥开一层">
+                <span class="ring" style="width:100%;height:100%"></span>
+                <span class="ring" style="width:90%;height:90%"></span>
+                <span class="ring" style="width:80%;height:80%"></span>
+                <span class="ring" style="width:70%;height:70%"></span>
+                <span class="ring" style="width:60%;height:60%"></span>
+                <span class="core">“我想要一个<br>勋章系统”</span>
+              </button>
+              <div class="onion-cta"><span class="lab-hint" id="onion-left" style="margin:0">还有 5 层</span></div>
+            </div>
+            <div>
+              <ol class="motives" id="motives"><li class="empty" style="display:block;border:0;background:none;padding:0;animation:none">剥开的动机会出现在这里。</li></ol>
+              <div class="ask-row" id="ask3">
+                <p>五层都剥开了。那，还要做勋章吗？</p>
+                <div class="choices">
+                  <button class="choice" type="button" data-v="yes">要做</button>
+                  <button class="choice" type="button" data-v="no">不一定</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reveal" id="reveal3" aria-live="polite">
+            <h4 id="reveal3-h"></h4>
+            <p>这五种动机，都能用别的办法满足：想被看见，粉丝数和被推荐更管用；想重新找回动力，就给新的目标和玩法。</p>
+            <p>而且勋章的新鲜感消退得特别快。粉丝从 1000 涨到 10000、等级从 1 升到 10，那种成就感，勋章比不上。不断设计新勋章，人力成本高，热闹一阵就过去了，攒不下长期的东西。所以小明的结论是：<strong>勋章是鸡肋</strong>。</p>
+          </div>
+
+          <h4 class="sub-h" style="margin-top:30px">再练一题：跑步的时候，为什么要听歌？</h4>
+          <p class="lab-hint">先写下你的答案（不打分），再翻开看看负责“跑步 FM”的产品经理发现了什么。</p>
+          <textarea id="run-guess" rows="3" placeholder="我觉得是因为……"></textarea>
+          <div style="margin-top:10px"><button class="btn primary" type="button" id="run-open">翻开答案</button></div>
+          <div class="reveal" id="reveal3b" aria-live="polite">
+            <h4>不只是背景音乐</h4>
+            <p>他访谈了一批爱跑步的人，发现两层原因。第一，音乐能把注意力从“好累，还有多远”上移开，让人跑得更久。第二，节奏强的音乐能带着脚步走：步子慢下来时把你拉回节奏，步子稳了还能带你跑快一点。</p>
+            <div class="beat" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><span>步频 ≈ 节拍</span></div>
+            <p>所以跑步 FM 做成了按步频配歌。动机想清楚了，功能该怎么做也就清楚了。</p>
+          </div>
+
+          <p class="tip"><b>顺便一招：</b>和组员意见不合时，也可以往上退一层。先对齐“我们想达到什么”，再比较“用哪个办法”，就不会变成观点之争。</p>
+        </div>
+      </div>
+
+      <aside class="takeaway fx">
+        <div>
+          <h3>要点</h3>
+          <p>用户提的是办法，你要找的是动机。多问一句“为什么”，常常能找到比用户想的更好的办法。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="track" id="t04">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 04 · 第三招</p>
+        <h2>角色、场景、流程</h2>
+        <p class="lede">问卷里人人都说需要的功能，上线后却没人用。问题出在哪？</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>2009 年，小明在一家支付公司做设计师，负责优化“AA 收款”功能。聚餐 AA 太常见了，问卷里几乎人人都说需要一个线上收款工具。</p>
+          <p>可功能上线后，每天只有很少的人在用，和转账、付款比起来少得可怜。小明把交互改了又改，数据还是上不去。后来手机支付普及了，这个功能依然藏在很深的页面里，很少有人用。</p>
+          <p>用户没有骗人，他们只是没有深想。要看穿一个需求，可以把它拆成三块：<strong>角色</strong>（谁在用，谁最需要）、<strong>场景</strong>（在什么情况下发生）、<strong>流程</strong>（他要走几步）。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/a-t04.webp" alt="插画：俯视一张吃完火锅的圆桌，四副碗筷，桌上压着一张小票，一只手递出手机，其他人有点犹豫" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="lab fx" id="lab4">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ④</span>
+          <span class="lab-title">拆 AA 收款</span>
+          <span class="spacer"></span>
+          <button class="btn" type="button" id="lab4-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <div class="steps" role="tablist" aria-label="拆解步骤" id="aa-steps">
+            <button role="tab" aria-controls="aa-p1" type="button"><span class="n">1</span>角色</button>
+            <button role="tab" aria-controls="aa-p2" type="button" disabled><span class="n">2</span>场景</button>
+            <button role="tab" aria-controls="aa-p3" type="button" disabled><span class="n">3</span>流程</button>
+          </div>
+
+          <div class="panel" id="aa-p1" role="tabpanel">
+            <p class="lab-hint" style="color:var(--ink);font-size:16px">四个人吃完火锅，一共 242 元，其中一个人先买了单。AA 收款这个功能，最该为谁服务？</p>
+            <div class="choices" id="aa-role">
+              <button class="choice" type="button" data-v="payer">另外三个要付钱的人</button>
+              <button class="choice" type="button" data-v="payee">先垫钱、要把钱收回来的那个人</button>
+            </div>
+            <div class="reveal" id="aa-role-why">
+              <p>付钱的人只要点一下就行，没什么麻烦。真正头疼的是收钱的人：要算钱、要通知、要记着谁还没给。所以这个功能的主角是<strong>收款方</strong>。</p>
+              <p style="margin-bottom:0">再细一点，收款方还分好几种。点开看看：</p>
+              <div class="roles">
+                <button class="role" type="button" aria-expanded="false"><b>四人聚餐</b><span>人少，钱好算，谁没给一眼就知道。这是最常见的 AA。</span></button>
+                <button class="role" type="button" aria-expanded="false"><b>十人以上的聚会</b><span>谁给了、谁没给，很难记清楚。</span></button>
+                <button class="role" type="button" aria-expanded="false"><b>收班费的班长</b><span>同一批人、定期收，最好有个固定模板。</span></button>
+                <button class="role" type="button" aria-expanded="false"><b>球队的组织者</b><span>每次来的人和花的钱都不一样，最累的就是他。</span></button>
+              </div>
+            </div>
+            <div class="panel-foot"><button class="btn primary" type="button" id="aa-next1" disabled>下一步：场景 →</button></div>
+          </div>
+
+          <div class="panel" id="aa-p2" role="tabpanel" hidden>
+            <div class="scene">
+              <div>
+                <label for="aa-time" class="lab-hint" style="display:block;color:var(--ink);font-size:16px">拖动时间，看看收款方和付款方谁更“硬气”。</label>
+                <input type="range" id="aa-time" min="0" max="4" step="1" value="0">
+                <div class="ticks"><span>刚吃完</span><span>回到宿舍</span><span>第二天</span><span>三天后</span><span>一周后</span></div>
+                <p class="caption" id="aa-caption" aria-live="polite"></p>
+              </div>
+              <div class="balance" aria-hidden="true">
+                <svg viewBox="0 0 320 210" id="aa-balance">
+                  <path d="M160 60 L160 186 M118 192 L202 192" stroke="currentColor" stroke-width="5" stroke-linecap="round" fill="none" opacity=".55"/>
+                  <circle cx="160" cy="60" r="7" fill="currentColor" opacity=".7"/>
+                  <line id="aa-beam" x1="60" y1="60" x2="260" y2="60" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+                  <g id="aa-panL">
+                    <line x1="0" y1="0" x2="-26" y2="46" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+                    <line x1="0" y1="0" x2="26" y2="46" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+                    <path d="M-38 46 Q0 74 38 46 Z" fill="var(--accent)"/>
+                    <text x="0" y="96" text-anchor="middle" font-size="15" font-weight="700" fill="currentColor">收款方</text>
+                  </g>
+                  <g id="aa-panR">
+                    <line x1="0" y1="0" x2="-26" y2="46" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+                    <line x1="0" y1="0" x2="26" y2="46" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+                    <path d="M-38 46 Q0 74 38 46 Z" fill="currentColor" opacity=".75"/>
+                    <text x="0" y="96" text-anchor="middle" font-size="15" font-weight="700" fill="currentColor">付款方</text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="reveal" id="aa-scene-why">
+              <p>2009 年的线上 AA 收款，恰好发生在“回到宿舍、打开电脑”之后。它把收钱这件事，从最好开口的饭桌上，搬到了最难开口的时候。</p>
+            </div>
+            <div class="panel-foot"><button class="btn primary" type="button" id="aa-next2" disabled>下一步：流程 →</button></div>
+          </div>
+
+          <div class="panel" id="aa-p3" role="tabpanel" hidden>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px">
+              <span class="lab-hint" style="margin:0;color:var(--ink);font-size:16px">站在收款方的角度，数一数要走几步。</span>
+              <div class="seg" role="group" aria-label="选择年代">
+                <button type="button" data-era="2009" aria-pressed="true">2009 年网页版</button>
+                <button type="button" data-era="now" aria-pressed="false">手机支付以后</button>
+              </div>
+            </div>
+            <div class="flows">
+              <div class="flow" id="aa-flowA"><h5>用 AA 收款功能<span class="cnt"></span></h5><ol></ol></div>
+              <div class="flow win" id="aa-flowB"><h5>直接在群里说一声<span class="cnt"></span></h5><ol></ol></div>
+            </div>
+            <p class="lab-hint" style="margin-top:10px">红色的步骤，是收款方最犯难的地方。</p>
+            <div class="reveal show" id="aa-verdict">
+              <h4>结论：对收款方来说，这是伪需求</h4>
+              <p>线上 AA 收款没有解决最难的那件事：不好意思催钱。它反而让收款方多走了好几步。用户在问卷里说“需要”，是因为没有深想。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="takeaway fx">
+        <div>
+          <h3>要点</h3>
+          <p>新办法得比用户现在凑合的办法更省事、更不尴尬，才会有人用。这正是 Vibe Coding 四个问题里的“现在怎么解决”。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="track" id="t05">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 05 · 用到你的点子上</p>
+        <h2>需求体检卡</h2>
+        <p class="lede">拿出你自己的点子，用这三招给它做一次体检。</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>可以用你在 Vibe Coding 课上设计的小工具，也可以从下面三张点子卡里挑一张。</p>
+          <p>每一栏下面都有一句灰色的示范，照着它的样子写自己的就行。写的时候记住三件事：</p>
+          <p><strong>追问</strong>到具体的经历和数字；<strong>问为什么</strong>，直到找到动机；<strong>拆开</strong>角色、场景和流程，和用户现在凑合的办法比一比。</p>
+          <p>填完可以复制成文字，或者下载成一张图片。浏览器会记住你填的内容，第二课还会接着用。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/a-t05.webp" alt="插画：一副听诊器搭在一张空白的横线卡片上，旁边有一支铅笔和一个灯泡" width="1200" height="800" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="lab fx" id="lab5">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ⑤</span>
+          <span class="lab-title">需求体检卡</span>
+        </div>
+        <div class="lab-body">
+          <h4 class="sub-h">先选一个点子</h4>
+          <div class="ideas" id="ideas" role="group" aria-label="选择点子"></div>
+          <div class="form" id="card-form">
+            <div class="field">
+              <label for="f-name">给它起个名字</label>
+              <input type="text" id="f-name" data-k="name">
+            </div>
+            <div class="field">
+              <label for="f-said">用户的原话</label>
+              <p class="help">用户最初是怎么说的？照原样写下来。</p>
+              <textarea id="f-said" data-k="said" rows="2"></textarea>
+            </div>
+            <div class="field">
+              <span class="lbl">追问三次“为什么”</span>
+              <p class="help">每一次都接着上一次的回答往下问，直到问出动机。</p>
+              <div class="whys">
+                <div class="why"><span>为什么①</span><textarea data-k="why1" rows="1" aria-label="第一次追问"></textarea></div>
+                <div class="why"><span>为什么②</span><textarea data-k="why2" rows="1" aria-label="第二次追问"></textarea></div>
+                <div class="why"><span>为什么③</span><textarea data-k="why3" rows="1" aria-label="第三次追问"></textarea></div>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-role">主要角色</label>
+              <p class="help">会用到它的有哪几种人？谁最需要它？</p>
+              <textarea id="f-role" data-k="role" rows="2"></textarea>
+            </div>
+            <div class="field">
+              <label for="f-scene">一个具体场景</label>
+              <p class="help">什么时候、在哪、之前之后发生了什么？越具体越好。</p>
+              <textarea id="f-scene" data-k="scene" rows="3"></textarea>
+            </div>
+            <div class="field">
+              <span class="lbl">流程对比</span>
+              <p class="help">他现在是怎么凑合的？用你的工具又要几步？用“→”把步骤连起来。</p>
+              <div class="two">
+                <textarea data-k="now" rows="3" aria-label="现在怎么凑合"></textarea>
+                <textarea data-k="mine" rows="3" aria-label="用你的工具"></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <span class="lbl">体检结论</span>
+              <div class="verdicts" role="radiogroup" aria-label="体检结论">
+                <label><input type="radio" name="verdict" value="真需求">真需求</label>
+                <label><input type="radio" name="verdict" value="伪需求">伪需求</label>
+                <label><input type="radio" name="verdict" value="还得去问人">还得去问人</label>
+              </div>
+              <textarea data-k="reason" rows="2" aria-label="一句理由"></textarea>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn primary" type="button" id="card-png">⬇ 下载成图片</button>
+            <button class="btn" type="button" id="card-copy">复制文字</button>
+            <button class="btn" type="button" id="card-clear">清空</button>
+            <span class="saved" id="card-saved" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track" id="check">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">收尾</p>
+        <h2>六道题，检查一下</h2>
+      </header>
+      <div id="quiz" class="fx"></div>
+
+      <header class="track-head fx" style="margin-top:clamp(48px,7vw,80px)">
+        <h2>八个词，一页看完</h2>
+      </header>
+      <dl class="glossary fx">
+        <div class="term"><dt>深度访谈</dt><dd>找典型用户一对一地聊，靠追问细节了解他的真实想法。了解用户最好的办法之一。</dd></div>
+        <div class="term"><dt>典型用户</dt><dd>真正属于目标人群的人。找错了人，后面的结论全会跑偏。</dd></div>
+        <div class="term"><dt>用户画像</dt><dd>把一类用户写成一个具体的人：他是谁、怎么用、在意什么。</dd></div>
+        <div class="term"><dt>动机</dt><dd>用户想要某样东西背后的原因。同一句需求，背后可能有好几种动机。</dd></div>
+        <div class="term"><dt>伪需求</dt><dd>用户嘴上说需要、实际不会用的需求，往往是因为没解决真正的麻烦。</dd></div>
+        <div class="term"><dt>角色 · 场景 · 流程</dt><dd>拆需求的三把刀：谁在用、在什么情况下用、要走几步。</dd></div>
+        <div class="term"><dt>共鸣</dt><dd>别人的话说出了你的经历和感受。网易云评论区火起来，靠的就是它。</dd></div>
+        <div class="term"><dt>爱现</dt><dd>想被看见、被认同的心理。歌单、评论、点赞，都在满足它。</dd></div>
+      </dl>
+
+      <div style="margin-top:clamp(48px,7vw,80px)" class="fx">
+        <a class="next-side" href="../b-side/" style="--accent:var(--teal)">
+          <img src="../assets/img/b-cover.webp" alt="" width="120" height="120">
+          <div><span class="k">翻到 B 面</span><b>做产品，就是做选择</b><span>真需求也做不完。下一面讲：做什么、先做什么、不做什么。</span></div>
+          <span class="go">播放 B 面 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>《产品思维》第一课 · 26 Fall AI 语言工具与实操（西语学院微专业）</p>
+  </div>
+</footer>
+
+<script src="../assets/course.js"></script>
+<script src="labs.js"></script>
+</body>
+</html>

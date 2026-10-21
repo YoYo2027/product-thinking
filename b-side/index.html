@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>做选择 · 产品思维 B 面</title>
+<meta name="description" content="产品思维第二课：做产品就是做选择。做什么、先做什么、不做什么。">
+<script>
+  try { var t = JSON.parse(localStorage.getItem("pt.theme")); if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap">
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2317191F'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%232E5E5A'/%3E%3Ccircle cx='16' cy='16' r='1.4' fill='%23F4F0E8'/%3E%3C/svg%3E">
+</head>
+<body data-side="b">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../"><span class="dot" aria-hidden="true"></span>产品思维</a>
+    <span class="side-tag">B 面 · 做选择</span>
+    <nav aria-label="页面导航">
+      <a class="hide-sm" href="../a-side/">← A 面</a>
+      <a class="hide-sm" href="#tracks">曲目</a>
+      <a class="hide-sm" href="#t06">一页纸</a>
+      <a class="hide-sm" href="#check">自测</a>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="切换深浅色"></button>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <video muted loop playsinline preload="none" poster="../assets/loop/vinyl-poster.webp" data-src="../assets/loop/vinyl.mp4"></video>
+    </div>
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">B 面 · 做选择</p>
+        <h1>做产品，<br>就是做选择</h1>
+        <p class="sub">产品思维第二课：做什么、先做什么、不做什么</p>
+        <ol class="goals" aria-label="学完能做到">
+          <li>用三个圈找切入点：用户最痛的点、对手的弱点、自己的优势。</li>
+          <li>给第一版只选一个核心功能，并说得出放弃其他功能的理由。</li>
+          <li>判断一个功能能不能带来口碑。</li>
+          <li>拿不准的时候，用最小的实验去验证。</li>
+        </ol>
+        <p class="meta">
+          <span>⏱ 约 45 分钟</span>
+          <span>▶ 配套视频：第二集《做选择》约 10 分钟</span>
+        </p>
+      </div>
+      <div class="record" role="img" aria-label="唱片封套：一只手从一排唱片里抽出一张">
+        <div class="sleeve"><img src="../assets/img/b-cover.webp" alt="" width="900" height="900"></div>
+        <div class="disc" aria-hidden="true">
+          <div class="disc-spin"><div class="label"><span><b>B</b><small>SIDE · 做选择</small></span></div></div>
+          <div class="hole"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track intro" id="tracks">
+    <div class="wrap">
+      <div class="intro-grid">
+        <div class="prose fx">
+          <p class="track-no">写在前面</p>
+          <p>在 A 面，我们学会了分辨真需求。可真需求也做不完：用户想要的，永远比你的时间多。</p>
+          <p>Vibe Coding 第一课教过一个砍功能的办法：<strong>拿掉它，产品还能用吗？能用，就以后再说。</strong>可要是几个选项都“能用”，或者用户呼声最高的那个，你偏偏不该做呢？</p>
+          <p>这一面讲的，就是这种时候怎么选。故事还是网易云音乐，主角还是产品经理小明。</p>
+        </div>
+        <div class="fx">
+          <p class="track-no">本面曲目</p>
+          <ol class="tracklist">
+            <li><a href="#t01"><span class="no">01</span><span class="t">开场：你先做哪个</span><span class="d">6 分钟</span></a></li>
+            <li><a href="#t02"><span class="no">02</span><span class="t">找切入点：三个圈</span><span class="d">10 分钟</span></a></li>
+            <li><a href="#t03"><span class="no">03</span><span class="t">第一版只留一个</span><span class="d">8 分钟</span></a></li>
+            <li><a href="#t04"><span class="no">04</span><span class="t">有时候要对用户说“不”</span><span class="d">8 分钟</span></a></li>
+            <li><a href="#t05"><span class="no">05</span><span class="t">什么能带来口碑</span><span class="d">6 分钟</span></a></li>
+            <li><a href="#t06"><span class="no">06</span><span class="t">拿不准怎么办：我的产品一页纸</span><span class="d">15 分钟</span></a></li>
+            <li><a href="#check"><span class="no">✓</span><span class="t">六道题、八个词</span><span class="d">5 分钟</span></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 01 ============ -->
+  <section class="track" id="t01">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 01 · 开场</p>
+        <h2>你先做哪个</h2>
+        <p class="lede">几百个用户要排行榜，只有几个人提到导入歌单。</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>2013 年，网易云音乐刚上线。小明每天花一个小时看用户反馈，需求池里的声音越来越多。</p>
+          <p>被提得最多的，是“加个排行榜”。它被提的次数，是另一条需求的成百上千倍。那条冷门需求是：<strong>能不能把我在别的 App 里收藏的歌，一键导过来？</strong></p>
+          <p>如果是你，下一个版本先做哪个？</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/b-t01.webp" alt="插画：一架天平，一边是一大摞需求卡片，另一边只有一张卡片，却是那一边更重" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="lab fx" id="lab1">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ①</span>
+          <span class="lab-title">你先做哪个</span>
+          <span class="spacer"></span>
+          <button class="btn" type="button" id="lab1-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">点一张卡片，选你下个版本先做的需求。</p>
+          <div class="duel" id="duel">
+            <button class="req" type="button" data-v="rank"><span class="rq">“加个排行榜”</span><span class="bar" style="--w:100%"><i></i></span><span class="votes">被提了几百上千次</span></button>
+            <button class="req" type="button" data-v="import"><span class="rq">“把我在别的 App 收藏的歌，一键导过来”</span><span class="bar" style="--w:3%"><i></i></span><span class="votes">只有几个人提</span></button>
+          </div>
+          <div class="reveal" id="reveal1" aria-live="polite">
+            <h4 id="reveal1-h"></h4>
+            <p>小明和团队先做了导入歌单。上线时没有大张旗鼓地宣传，只在一两百人的种子用户群里发了个消息。消息在乐迷圈子里传开，几十万资深乐迷带着自己的收藏搬了过来。</p>
+            <div class="mini-stats">
+              <div><b>近百万</b><span>导入歌单带来的活跃用户</span></div>
+              <div><b>几千万</b><span>按当时的价格，相当于省下的推广费</span></div>
+            </div>
+            <p>而排行榜呢？对手们早就有了，再做一个也显不出什么不同。为什么偏偏是导入歌单？下一条 Track 拆开来看。</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="takeaway fx">
+        <div>
+          <h3>要点</h3>
+          <p>按呼声高低给需求排队，看起来最稳，其实最容易错过机会。呼声最高的需求，往往对手早就做了。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 02 ============ -->
+  <section class="track" id="t02">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 02 · 找切入点</p>
+        <h2>三个圈</h2>
+        <p class="lede">不跟对手比谁的功能多，而是找一个对手顾不上、你又恰好擅长的口子。</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>2013 年的在线音乐是一片红海：酷狗、酷我、QQ 音乐、天天动听这些老牌播放器，加起来占了近八成市场，做的都是大众用户。</p>
+          <p>小明用两个维度给用户分群：年龄，和对音乐的热爱程度（见下图）。他选了一小群人先切进去：<strong>资深音乐爱好者</strong>。他们的痛点是找不到更多好音乐；他们能影响身边的人；当时也没有谁把这件事做好。这叫<strong>细分</strong>。</p>
+          <p>同时，他看清了行业在怎么变：人们正从电脑转到手机上听歌，收藏要能云同步，听歌越来越碎片化，用户越来越“懒”，也越来越爱互动。这叫<strong>新兴</strong>：顺着变化走，而不是跟在老对手后面。</p>
+          <p>具体到这群资深乐迷，切口在哪？把线索分进三个圈试试。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/b-t02.webp" alt="插画：三张唱片像三个圆一样叠在一起，交集处发着光，几个小人站在唱片上望向中间" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <figure class="map fx" style="margin-top:clamp(24px,4vw,40px)">
+        <svg viewBox="0 0 600 380" role="img" aria-label="用户地图：横轴是年龄，从学生到工作以后；纵轴是对音乐的热爱程度。老牌播放器主攻下面的普通学生和大众用户；网易云先切中间的两群意见领袖。">
+          <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="currentColor"/></marker></defs>
+          <g fill="none" stroke="currentColor" stroke-width="1.5" opacity=".55">
+            <line x1="56" y1="350" x2="584" y2="350" marker-end="url(#ah)"/>
+            <line x1="56" y1="350" x2="56" y2="14" marker-end="url(#ah)"/>
+          </g>
+          <text x="584" y="372" text-anchor="end" font-size="13" fill="currentColor" opacity=".7">年龄：学生 → 工作以后</text>
+          <text x="22" y="190" font-size="13" fill="currentColor" opacity=".7" transform="rotate(-90 22 190)" text-anchor="middle">对音乐的热爱 →</text>
+          <g font-size="14" font-weight="700" fill="currentColor">
+            <rect x="330" y="22" width="240" height="44" rx="12" fill="currentColor" opacity=".08"/><text x="450" y="49" text-anchor="middle">行业精英</text>
+            <rect x="160" y="78" width="410" height="44" rx="12" fill="currentColor" opacity=".08"/><text x="365" y="105" text-anchor="middle">行业从业者</text>
+            <rect x="74" y="148" width="236" height="62" rx="14" fill="var(--accent)" opacity=".18"/><text x="192" y="184" text-anchor="middle">学生中的意见领袖</text>
+            <rect x="330" y="148" width="240" height="62" rx="14" fill="var(--accent)" opacity=".18"/><text x="450" y="184" text-anchor="middle">资深乐迷（意见领袖）</text>
+            <rect x="74" y="246" width="236" height="84" rx="14" fill="currentColor" opacity=".08"/><text x="192" y="293" text-anchor="middle">普通学生</text>
+            <rect x="330" y="246" width="240" height="84" rx="14" fill="currentColor" opacity=".08"/><text x="450" y="293" text-anchor="middle">大众用户</text>
+          </g>
+          <rect x="66" y="238" width="512" height="100" rx="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 5" opacity=".55"/>
+          <text x="572" y="332" text-anchor="end" font-size="12" fill="currentColor" opacity=".75">老牌播放器主攻这里</text>
+          <rect x="66" y="140" width="512" height="78" rx="18" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+          <text x="572" y="232" text-anchor="end" font-size="12.5" font-weight="700" fill="var(--accent)">网易云先切这里</text>
+        </svg>
+        <figcaption>用户地图（示意）：两个维度就能把用户分成几群，再看对手都挤在哪一块。</figcaption>
+      </figure>
+
+      <div class="lab fx" id="lab2">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ②</span>
+          <span class="lab-title">三个圈</span>
+          <span class="spacer"></span>
+          <button class="btn" type="button" id="lab2-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">把 9 张线索卡分进对应的圈。有几张是干扰卡，放进“都不是”。电脑上可以拖；手机上先点卡片，再点圈。</p>
+          <div id="sorter2"></div>
+          <div class="reveal" id="reveal2" aria-live="polite">
+            <h4>三个圈的交集：导入歌单 + 免费下载</h4>
+            <div class="venn" id="venn">
+              <svg viewBox="0 0 480 400" role="img" aria-label="三个圆：用户最痛的点、对手的弱点、自己的优势，交集是导入歌单加免费下载">
+                <circle cx="180" cy="150" r="118" fill="var(--red)" opacity=".22"/>
+                <circle cx="300" cy="150" r="118" fill="#1E2235" opacity=".16"/>
+                <circle cx="240" cy="252" r="118" fill="var(--teal)" opacity=".26"/>
+                <g font-size="15" font-weight="700" fill="currentColor" text-anchor="middle">
+                  <text x="128" y="96">用户最痛的点</text><text x="128" y="118" font-size="12" font-weight="400" opacity=".8">换 App 要重收几百首歌</text>
+                  <text x="352" y="96">对手的弱点</text><text x="352" y="118" font-size="12" font-weight="400" opacity=".8">歌不能下 / 下载要付费</text>
+                  <text x="240" y="336">自己的优势</text><text x="240" y="358" font-size="12" font-weight="400" opacity=".8">高品质音乐免费下载</text>
+                </g>
+                <g class="core-glow">
+                  <circle cx="240" cy="186" r="40" fill="var(--accent)"/>
+                  <text x="240" y="182" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">导入歌单</text>
+                  <text x="240" y="200" text-anchor="middle" font-size="12" fill="#fff">+ 免费下载</text>
+                </g>
+              </svg>
+            </div>
+            <p>一键把别处收藏的歌单搬过来，搬过来就能免费下载高品质音乐。越是收藏多的人，越可能是乐迷圈子里的意见领袖，他们一搬，身边的人就跟着来了。</p>
+            <h4 style="margin-top:16px">再想一步：还有没有迁移成本更低的人？</h4>
+            <button class="btn" type="button" id="road2">想好了，看答案</button>
+            <p id="road2-a" hidden style="margin-top:10px">有：<strong>还没攒下收藏的年轻人</strong>。中学生、大学生的音乐口味正在形成，还没被老产品“教育”出习惯。陪着网易云长大的这批人，养成的新习惯很难再被别人改掉。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside-box fx">
+        <h4>再看一个例子 · 电影网站的三次换代</h4>
+        <p>十几年前，影迷都上时光网查电影资料。后来豆瓣电影没跟它比谁的资料库全，而是做了评分、影评和推荐，把影迷吸走了。再后来，购票 App 和视频网站也没跟豆瓣比影评，而是从“买票”“看片”切进去，抓住了更多普通观众。每一次换代，新玩家都没有在对手最强的地方硬碰。</p>
+      </div>
+
+      <aside class="takeaway fx">
+        <div>
+          <h3>要点</h3>
+          <p>切入点 = 用户最痛的点 × 对手的弱点 × 自己的优势。三样凑齐，才能四两拨千斤。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 03 ============ -->
+  <section class="track" id="t03">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 03 · 核心功能</p>
+        <h2>第一版只留一个</h2>
+        <p class="lede">第一版的核心只能有一个。用户一打开，就该知道你是干什么的。</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>要帮资深乐迷“发现好音乐”，小明手上有五个候选：歌单、标签、电台、MV、音频直播聊天室。每一个都能做，每一个都“能用”。</p>
+          <p>可是新产品一上来功能太多，用户反而看不清它是干什么的。第一版的核心，只能挑一个。</p>
+          <p>这时 Vibe Coding 的“拿掉还能用吗”就不够用了。要多问一句：<strong>哪一个最能撑起长期的目标？</strong></p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/b-t03.webp" alt="插画：桌上一把剪刀和一堆剪下来的卡片，上方的软木板上只钉着一张卡片" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="lab fx" id="lab3">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ③</span>
+          <span class="lab-title">只能留一个</span>
+          <span class="spacer"></span>
+          <button class="btn" type="button" id="lab3-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <div class="steps" role="tablist" aria-label="三轮" id="cut-steps">
+            <button role="tab" aria-controls="cut-p1" type="button"><span class="n">1</span>先放一边</button>
+            <button role="tab" aria-controls="cut-p2" type="button" disabled><span class="n">2</span>决赛</button>
+            <button role="tab" aria-controls="cut-p3" type="button" disabled><span class="n">3</span>还要加吗</button>
+          </div>
+          <div class="panel" id="cut-p1" role="tabpanel">
+            <p class="lab-hint" style="color:var(--ink);font-size:16px">五个候选里，先把不适合做第一版核心的三个放一边。</p>
+            <div class="cands" id="cands"></div>
+            <div class="panel-foot"><button class="btn primary" type="button" id="cut-next1" disabled>进入决赛 →</button></div>
+          </div>
+          <div class="panel" id="cut-p2" role="tabpanel" hidden>
+            <p class="lab-hint" style="color:var(--ink);font-size:16px">剩下歌单和标签。看看各自的利弊，你选哪个做核心？</p>
+            <div class="vs">
+              <div class="opt" data-v="list">
+                <h5>歌单</h5>
+                <ul>
+                  <li>用户能围绕歌单互动、关注彼此，慢慢形成社区</li>
+                  <li>本来就是“一串歌连着听”，大众上手没门槛</li>
+                  <li class="con">会有重复的歌单，结构也不如标签灵活</li>
+                </ul>
+                <button class="btn" type="button">选歌单</button>
+              </div>
+              <div class="mid">VS</div>
+              <div class="opt" data-v="tag">
+                <h5>标签</h5>
+                <ul>
+                  <li>网状结构，可以交叉探索，很灵活</li>
+                  <li>能当轴心，把整个产品串起来</li>
+                  <li class="con">用户自己创作得少，用户之间的互动也会变弱</li>
+                </ul>
+                <button class="btn" type="button">选标签</button>
+              </div>
+            </div>
+            <div class="reveal" id="cut-why2" aria-live="polite">
+              <h4 id="cut-why2-h"></h4>
+              <p>小明选了歌单。标签更灵活，但歌单让用户自己创作、彼此互动，更能撑起“做一个乐迷社区”的长期目标。歌单的缺点影响不大：重复的歌单可以用技术手段往后排，网状结构也不是非有不可。</p>
+            </div>
+            <div class="panel-foot"><button class="btn primary" type="button" id="cut-next2" disabled>下一轮 →</button></div>
+          </div>
+          <div class="panel" id="cut-p3" role="tabpanel" hidden>
+            <p class="lab-hint" style="color:var(--ink);font-size:16px">排行榜、新歌、歌曲分类，是当时最常见的找歌方式，用户也常用。第一版要不要放进去？</p>
+            <div class="choices" id="cut-q3">
+              <button class="choice" type="button" data-v="keep">放进去，用户常用</button>
+              <button class="choice" type="button" data-v="cut">全砍掉</button>
+            </div>
+            <div class="reveal" id="cut-why3" aria-live="polite">
+              <h4 id="cut-why3-h"></h4>
+              <p>先用 Vibe Coding 的标准问一句：拿掉它们，产品还能用吗？能，还有搜索和歌单。小明把它们全砍了：除了搜索，第一版发现音乐只有歌单这一条路。新用户一打开就知道，这是一个以歌单为主的产品。</p>
+              <div class="v1">
+                <div class="app"><span class="lbl">第一版</span><span class="pill">搜索</span><span class="pill star">★ 歌单</span><span class="pill cut">排行榜</span><span class="pill cut">新歌</span><span class="pill cut">歌曲分类</span><span class="pill cut">电台</span><span class="pill cut">MV</span></div>
+                <p style="margin:0" class="lab-hint">再往上看一层：歌单只是三步里的第一步。用户做歌单、听歌单攒下的数据，后面的推荐要用。</p>
+                <div class="road">
+                  <div><b>歌单</b>用户自己创建内容</div>
+                  <div><b>个性化推荐</b>靠前面攒下的数据</div>
+                  <div><b>社区</b>人和人连起来</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="takeaway fx">
+        <div>
+          <h3>要点</h3>
+          <p>几个选项都能用时，选最能撑起长期目标的那个。其余的，哪怕用户常用，也先砍掉，让核心一眼就看得见。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 04 ============ -->
+  <section class="track" id="t04">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 04 · 往上层思考</p>
+        <h2>有时候要对用户说“不”</h2>
+        <p class="lede">用户呼声最高的需求，也可能是你最不该做的那个。</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>一个需求是真的，也是目标用户想要的，是不是就该做？小明遇到过三次让他犹豫的时候。</p>
+          <p>每一次，他都把这个功能放回整个产品里看：做了它，别的地方会发生什么？这就是<strong>往上层思考</strong>：一个功能只是一个零件，要看它装进整台机器以后，会推倒什么、撑起什么。</p>
+          <p>下面三张决策卡，你来拍板。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/b-t04.webp" alt="插画：一排多米诺骨牌从左边开始倒下，第一块像一台小收音机，队尾是一张立着的唱片，一只手正要接住它" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="lab fx" id="lab4">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ④</span>
+          <span class="lab-title">做还是不做</span>
+          <span class="spacer"></span>
+          <button class="btn" type="button" id="lab4-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <div class="decisions" id="decisions"></div>
+        </div>
+      </div>
+
+      <aside class="takeaway fx">
+        <div>
+          <h3>要点</h3>
+          <p>判断一个功能，别只看它本身，要看它放进整个产品以后会推倒什么、撑起什么。目标变了，答案也会跟着变。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 05 ============ -->
+  <section class="track" id="t05">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 05 · 往不同思考</p>
+        <h2>什么能带来口碑</h2>
+        <p class="lede">满足了一百条反馈，也可能没有一个人帮你说好话。</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>为什么花力气做了很多用户要的功能，却没人主动去安利？因为那些功能是用户觉得理所当然的。小明总结，好口碑要凑齐三个条件：</p>
+          <p><strong>超出预期。</strong>要么<strong>快</strong>，抢先用上新东西；要么<strong>深</strong>，把细节做到极致；要么<strong>换一个维度</strong>，和用户最基本的感受拉开差距。</p>
+          <p><strong>乐意传播。</strong>让人感同身受、打开眼界，或者能拿来展示自己。</p>
+          <p><strong>用户够多。</strong>只有一小撮人在意的事，口碑传不远。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/b-t05.webp" alt="插画：一张唱片的中心变成留声机的喇叭，许多纸飞机从里面飞出来，小人们接住又传给别人" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="lab fx" id="lab5">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ⑤</span>
+          <span class="lab-title">口碑预测</span>
+          <span class="spacer"></span>
+          <button class="btn" type="button" id="lab5-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <div class="dims" id="dims" aria-hidden="true">
+            <svg viewBox="0 0 480 290">
+              <defs><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="currentColor"/></marker></defs>
+              <g stroke="currentColor" stroke-width="1.5" opacity=".55" fill="none">
+                <line x1="60" y1="240" x2="460" y2="240" marker-end="url(#ah2)"/>
+                <line x1="60" y1="240" x2="60" y2="30" marker-end="url(#ah2)"/>
+              </g>
+              <text x="460" y="266" text-anchor="end" font-size="13" fill="currentColor" opacity=".75">听歌本身：音质、音效</text>
+              <text x="70" y="30" font-size="13" fill="currentColor" opacity=".75">和人连接：评论、分享</text>
+              <circle cx="110" cy="240" r="7" fill="currentColor" opacity=".45"/>
+              <text x="110" y="226" text-anchor="middle" font-size="11" fill="currentColor" opacity=".6">原来</text>
+              <g class="dotA"><circle cx="110" cy="240" r="9" fill="currentColor"/><text x="110" y="222" text-anchor="middle" font-size="12.5" font-weight="700" fill="currentColor">音效优化</text></g>
+              <g class="dotB"><circle cx="110" cy="240" r="11" fill="var(--accent)"/><text x="128" y="244" font-size="12.5" font-weight="700" fill="var(--accent)">评论区</text></g>
+            </svg>
+          </div>
+          <p class="lab-hint">音效优化在同一条线上往前走了一点；评论区直接跳到了另一条轴上。下面 5 个功能，你来判断：会有人主动安利吗？</p>
+          <div class="wows" id="wows"></div>
+          <p class="score" id="wow-score" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <aside class="takeaway fx">
+        <div>
+          <h3>要点</h3>
+          <p>好口碑来自超出预期。只在用户的基本需求上打磨，效果往往波澜不惊；想要口碑，就得冒一点险。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 06 ============ -->
+  <section class="track" id="t06">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 06 · 收尾</p>
+        <h2>拿不准怎么办</h2>
+        <p class="lede">大多数决定，只有五成把握。</p>
+      </header>
+
+      <div class="story">
+        <div class="prose fx">
+          <p>小明说，他做过的产品方案，很少有八成以上的把握，多数只有五成左右。</p>
+          <p>导入歌单就是这样。设计和技术都准备好了，他还在犹豫：这么做会不会得罪对手、伤了品牌？一个周六早上，他刷到用户在讨论：“要是能把别处的精选集搬过来就好了。”他终于下了决心，把它临时加进下周的版本，向团队道歉、担下责任，上线后看数据判断成败。</p>
+          <p>拿不准的时候，他的办法是：<strong>抓重点</strong>，先想清楚最重要的是什么；<strong>不追求完美</strong>，没有完美的方案，速度也很重要；<strong>做实验</strong>，用最低的成本，比如一个简陋的原型、一次 A/B 测试，看用户的反馈和数据。还可以<strong>反过来想</strong>：先想想这件事会怎样失败。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/b-t06.webp" alt="插画：桌上一张画着空格子的纸，一枚指南针压在上面，旁边有一支铅笔和一盆小植物" width="1400" height="933" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="compass fx" aria-label="四种思考方向">
+        <div class="dir" data-arrow="↓"><h4>往本质<small>A 面 · 勋章</small></h4><p>不停在第一层。用户提的是办法，一层层往下问，找到动机。</p></div>
+        <div class="dir" data-arrow="◎"><h4>往重点<small>B 面 · 导入歌单</small></h4><p>先定目标，再拆出问题，最后才想办法。能放弃的就放弃。</p></div>
+        <div class="dir" data-arrow="↑"><h4>往上层<small>B 面 · 场景电台</small></h4><p>把一个功能放进整个产品里看：它会推倒什么、撑起什么。</p></div>
+        <div class="dir" data-arrow="↗"><h4>往不同<small>B 面 · 评论区</small></h4><p>不在对手最强的地方硬碰；换一个维度，或者反过来想。</p></div>
+      </div>
+
+      <div class="lab fx" id="lab6">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ⑥</span>
+          <span class="lab-title">我的产品一页纸</span>
+        </div>
+        <div class="lab-body">
+          <div class="from-a" id="from-a"></div>
+          <h4 class="sub-h">你的点子</h4>
+          <div class="ideas" id="ideas" role="group" aria-label="选择点子"></div>
+          <div class="form" id="op-form">
+            <div class="field">
+              <label for="o-name">名字</label>
+              <input type="text" id="o-name" data-k="name">
+            </div>
+            <div class="field">
+              <span class="lbl">一句话定义</span>
+              <p class="help">沿用 Vibe Coding 的句式。说不成一句话，通常说明还没想清楚。</p>
+              <div class="sentence">
+                <div class="seg-row"><span>为谁</span><input type="text" data-k="who" aria-label="为谁"></div>
+                <div class="seg-row"><span>在什么场景</span><input type="text" data-k="when" aria-label="在什么场景"></div>
+                <div class="seg-row"><span>解决什么问题</span><input type="text" data-k="problem" aria-label="解决什么问题"></div>
+                <div class="seg-row"><span>让他们能做到</span><input type="text" data-k="goal" aria-label="让他们能做到什么"></div>
+              </div>
+            </div>
+            <div class="field">
+              <label for="o-first">最先服务哪群人？为什么是他们？</label>
+              <p class="help">想想网易云的资深乐迷：需求没被满足、能影响别人、还没有对手做好。</p>
+              <textarea id="o-first" data-k="first" rows="2"></textarea>
+            </div>
+            <div class="field">
+              <span class="lbl">三个圈</span>
+              <div class="three">
+                <label>用户最痛的点<textarea data-k="pain" rows="3"></textarea></label>
+                <label>现有办法的弱点<textarea data-k="weak" rows="3"></textarea></label>
+                <label>你的优势<textarea data-k="edge" rows="3"></textarea></label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="lbl">唯一的核心功能</span>
+              <div class="two">
+                <textarea data-k="core" rows="2" aria-label="唯一的核心功能"></textarea>
+                <textarea data-k="dropped" rows="2" aria-label="为了它放弃了什么"></textarea>
+              </div>
+              <p class="help">左边写留下的那一个，右边写为了它放弃了什么。</p>
+            </div>
+            <div class="field">
+              <label for="o-notdo">不做清单</label>
+              <p class="help">别人会要、但你暂时不做的一两个功能，写上理由。</p>
+              <textarea id="o-notdo" data-k="notdo" rows="2"></textarea>
+            </div>
+            <div class="field">
+              <label for="o-wow">口碑点</label>
+              <p class="help">哪一处会让用户想截图发给朋友？是快、深，还是换了一个维度？</p>
+              <textarea id="o-wow" data-k="wow" rows="2"></textarea>
+            </div>
+            <div class="field">
+              <label for="o-test">最小实验</label>
+              <p class="help">一周之内、不写代码，你打算怎样验证它？</p>
+              <textarea id="o-test" data-k="test" rows="2"></textarea>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn primary" type="button" id="op-prompt">✦ 生成写给 AI 的需求说明</button>
+            <button class="btn" type="button" id="op-png">⬇ 下载成图片</button>
+            <button class="btn" type="button" id="op-copy">复制文字</button>
+            <button class="btn" type="button" id="op-clear">清空</button>
+            <span class="saved" id="op-saved" aria-live="polite"></span>
+          </div>
+          <div class="prompt-out" id="prompt-out">
+            <div class="ph">写给 AI 的需求说明<button class="btn primary" type="button" id="prompt-copy">复制</button></div>
+            <pre id="prompt-text"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track" id="check">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">收尾</p>
+        <h2>六道题，检查一下</h2>
+      </header>
+      <div id="quiz" class="fx"></div>
+
+      <header class="track-head fx" style="margin-top:clamp(48px,7vw,80px)">
+        <h2>八个词，一页看完</h2>
+      </header>
+      <dl class="glossary fx">
+        <div class="term"><dt>切入点</dt><dd>产品打开市场的第一道口子。最好同时满足：用户最痛、对手最弱、自己最强。</dd></div>
+        <div class="term"><dt>细分市场</dt><dd>先服务好一小群需求没被满足、又能影响别人的人，再往外扩。</dd></div>
+        <div class="term"><dt>迁移成本</dt><dd>用户从老产品换到新产品要付出的代价，比如几百首收藏的歌。</dd></div>
+        <div class="term"><dt>四两拨千斤</dt><dd>用很小的成本撬动很大的结果。导入歌单就是一例。</dd></div>
+        <div class="term"><dt>核心功能</dt><dd>第一版最该做好的那一个功能，用户一打开就该看见它。</dd></div>
+        <div class="term"><dt>长期目标</dt><dd>一两年甚至更久才能实现的方向。为了它，有时要让用户多走一步。</dd></div>
+        <div class="term"><dt>口碑</dt><dd>用户主动帮你说好话、向别人推荐。它来自超出预期。</dd></div>
+        <div class="term"><dt>最小实验</dt><dd>用最低的成本验证一个想法，比如一个简陋的原型、一次 A/B 测试。</dd></div>
+      </dl>
+
+      <div style="margin-top:clamp(48px,7vw,80px)" class="fx">
+        <a class="next-side" href="../">
+          <img src="../assets/img/home.webp" alt="" width="120" height="120">
+          <div><span class="k">两面都听完了</span><b>回到唱片封面</b><span>把体检卡和一页纸交给 AI，做出你的第一个版本。</span></div>
+          <span class="go">回首页 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>《产品思维》第二课 · 26 Fall AI 语言工具与实操（西语学院微专业）</p>
+  </div>
+</footer>
+
+<script src="../assets/course.js"></script>
+<script src="labs.js"></script>
+</body>
+</html>
