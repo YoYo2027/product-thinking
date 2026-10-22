@@ -386,7 +386,7 @@
     });
     $("#op-png").addEventListener("click", async () => {
       try { await document.fonts.ready; } catch (e) { /* 字体没加载也照样画 */ }
-      const canvas = PT.cardImage({ kicker: "我的产品一页纸 · B 面", title: name(), rows: rows(), footer: "产品思维 · B 面 做选择" });
+      const canvas = PT.cardImage({ kicker: "我的产品一页纸 · B 面", title: name(), rows: rows(), footer: "AI产品思维 · B 面 做选择" });
       PT.download(canvas, "产品一页纸-" + name() + ".png");
     });
     $("#op-copy").addEventListener("click", async () => {

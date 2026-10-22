@@ -422,7 +422,7 @@
         kicker: "需求体检卡 · A 面",
         title: v("name") || IDEAS[state.idea].title,
         rows: rows(),
-        footer: "产品思维 · A 面 看见人"
+        footer: "AI产品思维 · A 面 看见人"
       });
       PT.download(canvas, "需求体检卡-" + (v("name") || "我的点子") + ".png");
     });
