@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>录音棚 · AI产品思维工作坊</title>
+<meta name="description" content="AI产品思维 Bonus Track · 录音棚：90 分钟小组工作坊，从访谈、理需求、定方案，到让 AI 做出第一版，再互相评一评。">
+<script>
+  try { var t = JSON.parse(localStorage.getItem("pt.theme")); if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap">
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2317191F'/%3E%3Cpath d='M16 10a6 6 0 0 1 6 6h-6z' fill='%23A9472E'/%3E%3Cpath d='M22 16a6 6 0 0 1-6 6v-6z' fill='%232E5E5A'/%3E%3Cpath d='M16 22a6 6 0 0 1-6-6h6z' fill='%238A5F16'/%3E%3Cpath d='M10 16a6 6 0 0 1 6-6v6z' fill='%235B4E8C'/%3E%3C/svg%3E">
+</head>
+<body data-side="ws">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../"><span class="dot" aria-hidden="true"></span>AI产品思维</a>
+    <span class="side-tag">Bonus Track · 录音棚</span>
+    <nav aria-label="页面导航">
+      <a class="hide-sm" href="#flow">流程</a>
+      <a class="hide-sm" href="#studio">开工</a>
+      <span class="sidenav"><a href="../a-side/" title="A 面 · 看见人" aria-label="A 面 · 看见人">A</a><a href="../b-side/" title="B 面 · 做选择" aria-label="B 面 · 做选择">B</a><a href="../c-side/" title="C 面 · 收需求" aria-label="C 面 · 收需求">C</a><a href="../d-side/" title="D 面 · 验需求" aria-label="D 面 · 验需求">D</a><a href="../studio/" title="Bonus Track · 录音棚" aria-label="Bonus Track · 录音棚" aria-current="page">★</a></span>
+      <button class="btn" type="button" id="proj-open" title="老师用：大屏显示环节和倒计时">投屏模式</button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="切换深浅色"></button>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <video muted loop playsinline preload="none" poster="../assets/loop/vinyl-poster.webp" data-src="../assets/loop/vinyl.mp4"></video>
+    </div>
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Bonus Track · 工作坊</p>
+        <h1>录音棚：<br>从一页纸到第一版</h1>
+        <p class="sub">AI产品思维工作坊：四面学到的，一次用上</p>
+        <ol class="goals" aria-label="做完能带走">
+          <li>和组员一起，把一个点子从访谈一路做到 AI 做出的第一版。</li>
+          <li>每一步都用上前四面的方法：收需求、辨需求、选需求、验需求。</li>
+          <li>带走一张作品卡，和别组给你们的改进建议。</li>
+        </ol>
+        <p class="meta"><span>⏱ 90 分钟（两节课连上）</span><span>◎ 3–4 人一组</span></p>
+      </div>
+      <div class="record" role="img" aria-label="唱片封套：四只手从四个方向伸过来，一起推调音台上的推子">
+        <div class="sleeve"><img src="../assets/img/ws-cover.webp" alt="" width="900" height="900"></div>
+        <div class="disc" aria-hidden="true">
+          <div class="disc-spin"><div class="label"><span><b>★</b><small>BONUS</small></span></div></div>
+          <div class="hole"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track intro" id="flow">
+    <div class="wrap">
+      <div class="intro-grid">
+        <div class="prose fx">
+          <p class="track-no">写在前面</p>
+          <p>四面听完了：C 面收需求，A 面辨需求，B 面选需求，D 面验需求。这首 Bonus Track，要把四面串起来，做出一个真的东西。</p>
+          <p>一组 3–4 人，用一台电脑打开这一页就行。每一步写的东西都存在这台电脑的浏览器里，刷新也不会丢；这台电脑上写过的体检卡、一页纸、需求池和验证计划，会自动读进来。</p>
+          <p>跟着大屏幕上的倒计时走。时间到了就往下一步，没写完的，最后再回来补。</p>
+          <figure class="ws-figure" style="margin-top:22px">
+            <img src="../assets/img/ws-hero.webp" alt="插画：录音棚里，四个大学生围着调音台，一个戴着耳机，一个指着笔记本电脑，一个拿着一页纸，一个在推推子" width="1400" height="934" loading="lazy">
+          </figure>
+        </div>
+        <div class="fx">
+          <p class="track-no">流程 · 90 分钟</p>
+          <ol class="tracklist" id="flow-list"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="studio" aria-label="工作坊">
+    <nav class="rail" aria-label="环节">
+      <div class="wrap"><ol id="rail"></ol></div>
+    </nav>
+    <div class="track" style="padding-top:clamp(24px,4vw,40px)">
+      <div class="wrap">
+
+        <!-- ============ 环节 1 ============ -->
+        <section class="stage" id="s1" aria-labelledby="s1-h">
+          <div class="lab">
+            <div class="lab-head"><span class="lab-tag">环节 1 · 10 分钟</span><span class="lab-title" id="s1-h">组队选题</span><span class="spacer"></span><span class="uses" data-uses></span></div>
+            <div class="lab-body">
+              <p class="give"><b>这一步要交</b><span data-give></span></p>
+              <div class="form">
+                <div class="field">
+                  <label for="w-team">组名</label>
+                  <input type="text" id="w-team" data-k="team.name" placeholder="比如：第三组 · 小西工作室">
+                </div>
+                <div class="field">
+                  <span class="lbl">成员</span>
+                  <div class="members">
+                    <input type="text" data-k="team.members.0" aria-label="成员 1" placeholder="成员 1">
+                    <input type="text" data-k="team.members.1" aria-label="成员 2" placeholder="成员 2">
+                    <input type="text" data-k="team.members.2" aria-label="成员 3" placeholder="成员 3">
+                    <input type="text" data-k="team.members.3" aria-label="成员 4" placeholder="成员 4（可以空着）">
+                  </div>
+                </div>
+                <div class="field">
+                  <span class="lbl">选一个点子</span>
+                  <p class="help">可以接着用前几课的点子，也可以从三张点子卡里选一张。</p>
+                  <div class="ideas" id="w-ideas" role="group" aria-label="选择点子" style="margin-bottom:8px"></div>
+                  <input type="text" id="w-idea-name" data-k="ideaName" aria-label="点子的名字">
+                </div>
+                <div class="field">
+                  <span class="lbl">读到的前几课</span>
+                  <p class="help">这台电脑上写过的内容，会自动填进后面的环节。</p>
+                  <ul class="found" id="w-found"></ul>
+                  <div><button class="btn" type="button" id="w-reload">↻ 再读一次，补进空着的地方</button></div>
+                </div>
+              </div>
+              <div class="stage-nav"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 环节 2 ============ -->
+        <section class="stage" id="s2" aria-labelledby="s2-h">
+          <div class="lab">
+            <div class="lab-head"><span class="lab-tag">环节 2 · 20 分钟</span><span class="lab-title" id="s2-h">互访</span><span class="spacer"></span><span class="uses" data-uses></span></div>
+            <div class="lab-body">
+              <p class="give"><b>这一步要交</b><span data-give></span></p>
+              <h4 class="sub-h">访谈提纲</h4>
+              <p class="lab-hint">去别的组找一位“用户”：一个人问，一个人记，其他人听。提纲会跟着你们的点子变。</p>
+              <ol class="outline" id="w-outline"></ol>
+              <ul class="tips" id="w-tips" aria-label="好追问"></ul>
+              <h4 class="sub-h" style="margin-top:28px">用户原话卡</h4>
+              <p class="lab-hint">记原话，别记你的总结。写上是谁说的，比如“小李，大二”。</p>
+              <div class="qadd">
+                <textarea id="q-text" rows="2" aria-label="对方的原话" placeholder="对方的原话"></textarea>
+                <input type="text" id="q-who" aria-label="谁说的" placeholder="谁说的">
+                <button class="btn primary" type="button" id="q-add">＋ 记下来</button>
+              </div>
+              <div id="q-import"></div>
+              <div class="quotes" id="w-quotes"></div>
+              <p class="count-line" id="q-count"></p>
+              <div class="stage-nav"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 环节 3 ============ -->
+        <section class="stage" id="s3" aria-labelledby="s3-h">
+          <div class="lab">
+            <div class="lab-head"><span class="lab-tag">环节 3 · 15 分钟</span><span class="lab-title" id="s3-h">理需求</span><span class="spacer"></span><span class="uses" data-uses></span></div>
+            <div class="lab-body">
+              <p class="give"><b>这一步要交</b><span data-give></span></p>
+              <h4 class="sub-h">使用环节（可以改）</h4>
+              <div class="stages-edit" id="w-stages"></div>
+              <h4 class="sub-h" style="margin-top:22px">需求地图</h4>
+              <p class="lab-hint">先点一张原话卡，再点它属于的环节；电脑上也可以直接拖。每张卡标上真需求、伪需求，还是再问问；最后用 ★ 挑出一块长尾里的金子。</p>
+              <div class="qtray" id="w-tray" role="button" tabindex="0" aria-label="还没放进环节的原话卡"></div>
+              <div class="qcols" id="w-cols"></div>
+              <div id="p-import" style="margin-top:12px"></div>
+              <p class="count-line" id="map-count"></p>
+              <div class="stage-nav"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 环节 4 ============ -->
+        <section class="stage" id="s4" aria-labelledby="s4-h">
+          <div class="lab">
+            <div class="lab-head"><span class="lab-tag">环节 4 · 15 分钟</span><span class="lab-title" id="s4-h">定方案</span><span class="spacer"></span><span class="uses" data-uses></span></div>
+            <div class="lab-body">
+              <p class="give"><b>这一步要交</b><span data-give></span></p>
+              <div class="form">
+                <div class="field">
+                  <span class="lbl">一句话定义</span>
+                  <div class="sent">
+                    <label>为谁<input type="text" data-k="plan.who"></label>
+                    <label>在什么时候<input type="text" data-k="plan.when"></label>
+                    <label>解决什么麻烦<input type="text" data-k="plan.problem"></label>
+                    <label>让他们能做到什么<input type="text" data-k="plan.goal"></label>
+                  </div>
+                  <p class="preview" id="w-sentence"></p>
+                </div>
+                <div class="field">
+                  <span class="lbl">三个圈</span>
+                  <p class="help">三样凑齐的地方，就是切入点。</p>
+                  <div class="three">
+                    <label>用户最痛的点<textarea rows="2" data-k="plan.pain"></textarea></label>
+                    <label>现有办法的弱点<textarea rows="2" data-k="plan.weak"></textarea></label>
+                    <label>我们的优势<textarea rows="2" data-k="plan.edge"></textarea></label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="w-core">唯一的核心功能</label>
+                  <p class="help">第一版只做这一个。</p>
+                  <input type="text" id="w-core" data-k="plan.core">
+                </div>
+                <div class="field">
+                  <label for="w-notdo">不做清单</label>
+                  <textarea id="w-notdo" rows="2" data-k="plan.notdo"></textarea>
+                </div>
+                <div class="field">
+                  <label for="w-star">北极星指标</label>
+                  <input type="text" id="w-star" data-k="plan.star">
+                </div>
+                <div class="field">
+                  <label for="w-test">最小实验</label>
+                  <textarea id="w-test" rows="2" data-k="plan.test"></textarea>
+                </div>
+              </div>
+              <div class="stage-nav"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 环节 5 ============ -->
+        <section class="stage" id="s5" aria-labelledby="s5-h">
+          <div class="lab">
+            <div class="lab-head"><span class="lab-tag">环节 5 · 20 分钟</span><span class="lab-title" id="s5-h">做第一版</span><span class="spacer"></span><span class="uses" data-uses></span></div>
+            <div class="lab-body">
+              <p class="give"><b>这一步要交</b><span data-give></span></p>
+              <p class="lab-hint">按一下，把前面几步写的东西拼成一份写给 AI 的需求说明，复制给你们常用的 AI，让它做出第一版。</p>
+              <button class="btn primary" type="button" id="w-gen">生成写给 AI 的需求说明</button>
+              <div class="prompt-out" id="w-prompt">
+                <div class="ph">写给 AI 的需求说明<button class="btn primary" type="button" id="w-prompt-copy">复制</button></div>
+                <pre id="w-prompt-text"></pre>
+              </div>
+              <ol class="reminders">
+                <li><b>先让 AI 复述。</b>它说的和你们想的对上了，再让它动手。</li>
+                <li><b>一次只改一处。</b>说清楚哪里不对、想要什么样。</li>
+                <li><b>改不好，就回到一页纸。</b>多半是需求本身还没想清楚。</li>
+              </ol>
+              <div class="form" style="margin-top:24px">
+                <div class="field">
+                  <label for="w-link">第一版的链接</label>
+                  <p class="help">AI 对话的分享链接、部署后的网址都可以；没有链接，就在下面写清楚截图里是什么。</p>
+                  <input type="text" id="w-link" data-k="v1.link" placeholder="https://…">
+                </div>
+                <div class="field">
+                  <label for="w-tool">用的是哪个 AI</label>
+                  <input type="text" id="w-tool" data-k="v1.tool">
+                </div>
+                <div class="field">
+                  <label for="w-note">第一版能做什么，哪里还不行</label>
+                  <textarea id="w-note" rows="3" data-k="v1.note"></textarea>
+                </div>
+              </div>
+              <div class="stage-nav"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 环节 6 ============ -->
+        <section class="stage" id="s6" aria-labelledby="s6-h">
+          <div class="lab">
+            <div class="lab-head"><span class="lab-tag">环节 6 · 10 分钟</span><span class="lab-title" id="s6-h">互评</span><span class="spacer"></span><span class="uses" data-uses></span></div>
+            <div class="lab-body">
+              <p class="give"><b>这一步要交</b><span data-give></span></p>
+              <h4 class="sub-h">给别组打分</h4>
+              <p class="lab-hint">去体验另一组的第一版，再给他们打分、写一句建议。打完把互评卡下载下来，发给那一组。</p>
+              <div class="form">
+                <div class="field">
+                  <label for="w-rgroup">被评的小组</label>
+                  <input type="text" id="w-rgroup" data-k="review.group">
+                </div>
+                <div class="field">
+                  <span class="lbl">三个圈，各打 1–5 分</span>
+                  <div id="w-rates"></div>
+                </div>
+                <div class="field">
+                  <span class="lbl">口碑三条件，做到了就勾上</span>
+                  <div class="verdicts">
+                    <label><input type="checkbox" data-k="review.c1">超出预期</label>
+                    <label><input type="checkbox" data-k="review.c2">乐意传播</label>
+                    <label><input type="checkbox" data-k="review.c3">用户够多</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="w-advice">一句建议</label>
+                  <textarea id="w-advice" rows="2" data-k="review.advice" placeholder="最想让他们改的一件事"></textarea>
+                </div>
+              </div>
+              <div class="actions">
+                <button class="btn primary" type="button" id="w-review-png">⬇ 下载互评卡</button>
+                <button class="btn" type="button" id="w-review-copy">复制互评</button>
+              </div>
+              <h4 class="sub-h" style="margin-top:30px">我们组的改进清单</h4>
+              <p class="lab-hint">看看别组给你们的互评卡，写下接下来要改的三件事。</p>
+              <textarea rows="4" data-k="todo" aria-label="改进清单" placeholder="1. &#10;2. &#10;3. "></textarea>
+              <div class="finale">
+                <h4>作品卡</h4>
+                <p>组名、点子、一句话定义、核心功能、北极星指标、第一版和改进清单，一张图带走，交到学习通或者群里。</p>
+                <div class="actions">
+                  <button class="btn primary" type="button" id="w-card-png">⬇ 下载作品卡</button>
+                  <button class="btn" type="button" id="w-card-copy">复制作品卡文字</button>
+                  <button class="btn" type="button" id="w-clear">清空全部</button>
+                </div>
+              </div>
+              <div class="stage-nav"></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="track" style="padding-top:0">
+    <div class="wrap">
+      <a class="next-side fx" href="../" style="--accent:var(--ink)">
+        <img src="../assets/img/home.webp" alt="" width="120" height="120">
+        <div><span class="k">回到首页</span><b>四面都在这里</b><span>收需求、辨需求、选需求、验需求：哪一步卡住了，就回去再听一遍。</span></div>
+        <span class="go">回首页 →</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap"><p>《AI产品思维》工作坊 · 26 Fall 生成式人工智能应用基础 and AI 语言工具与实操</p></div>
+</footer>
+
+<!-- ============ 投屏模式 ============ -->
+<div class="proj" id="proj" hidden role="dialog" aria-modal="true" aria-label="投屏模式">
+  <div class="proj-top">
+    <span>AI产品思维 · 录音棚</span>
+    <span class="proj-dots" id="pj-dots" aria-hidden="true"></span>
+  </div>
+  <div class="proj-main">
+    <p class="proj-k" id="pj-k"></p>
+    <h2 id="pj-title"></h2>
+    <div class="proj-time" id="pj-time" role="timer" aria-live="off"></div>
+    <p class="proj-give"><b>这一步要交</b><span id="pj-give"></span></p>
+  </div>
+  <div class="proj-bar"><i id="pj-bar"></i></div>
+  <div class="proj-foot">
+    <div class="proj-ctrl">
+      <button class="btn" type="button" id="pj-prev">◀ 上一环节</button>
+      <button class="btn primary" type="button" id="pj-toggle">▶ 开始</button>
+      <button class="btn" type="button" id="pj-add">＋1 分钟</button>
+      <button class="btn" type="button" id="pj-reset">↺ 重新计时</button>
+      <button class="btn" type="button" id="pj-next">下一环节 ▶</button>
+      <button class="btn" type="button" id="pj-exit">退出投屏</button>
+    </div>
+    <p class="proj-next" id="pj-nexttext"></p>
+  </div>
+  <p class="proj-keys">空格 开始 / 暂停 · → 下一环节 · ← 上一环节 · + 加 1 分钟 · Esc 退出</p>
+</div>
+
+<script src="../assets/course.js"></script>
+<script src="studio.js"></script>
+</body>
+</html>

@@ -167,6 +167,7 @@
         b.box.querySelector(".count").textContent = b.n + "/" + b.total;
         state.placed += 1;
         say("");
+        opts.onPlace && opts.onPlace(it, binId);
         if (state.placed === opts.items.length) {
           root.classList.add("revealed");
           opts.onDone && opts.onDone({ mistakes: state.mistakes });
@@ -401,6 +402,77 @@
     document.body.append(a);
     a.click();
     a.remove();
+  };
+
+  // ---------- 连连看：先点左边，再点右边（键盘同样可用） ----------
+  // PT.matcher(root, { left: [{id, html}], right: [{id, html}], pairs: {leftId: rightId}, hints: {leftId: "…"}, onDone })
+  PT.matcher = function (root, o) {
+    root.classList.add("matcher");
+    root.innerHTML = "";
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("class", "lines");
+    const L = el("div", "col"), R = el("div", "col");
+    root.append(svg, L, R);
+    const toast = el("p", "toast");
+    toast.setAttribute("aria-live", "polite");
+    toast.style.gridColumn = "1 / -1";
+    root.append(toast);
+    let sel = null, done = 0;
+    const lines = [];
+    const mk = (it, side) => {
+      const b = el("button", "mt");
+      b.type = "button";
+      b.innerHTML = it.html;
+      b.dataset.id = it.id;
+      b.dataset.side = side;
+      b.setAttribute("aria-pressed", "false");
+      b.addEventListener("click", () => pick(b));
+      return b;
+    };
+    o.left.forEach((it) => L.append(mk(it, "l")));
+    shuffle(o.right.slice()).forEach((it) => R.append(mk(it, "r")));
+    function pick(b) {
+      if (b.classList.contains("done")) return;
+      if (!sel || sel.dataset.side === b.dataset.side) {
+        if (sel) sel.setAttribute("aria-pressed", "false");
+        sel = sel === b ? null : b;
+        if (sel) sel.setAttribute("aria-pressed", "true");
+        return;
+      }
+      const l = sel.dataset.side === "l" ? sel : b, r = sel.dataset.side === "r" ? sel : b;
+      sel.setAttribute("aria-pressed", "false");
+      sel = null;
+      if (o.pairs[l.dataset.id] === r.dataset.id) {
+        l.classList.add("done"); r.classList.add("done");
+        l.disabled = r.disabled = true;
+        lines.push([l, r]);
+        draw();
+        toast.textContent = "";
+        done += 1;
+        if (done === o.left.length && o.onDone) o.onDone();
+      } else {
+        [l, r].forEach((x) => { x.classList.remove("shake"); void x.offsetWidth; x.classList.add("shake"); });
+        toast.textContent = (o.hints && o.hints[l.dataset.id]) || "再想想，这两个好像对不上。";
+      }
+    }
+    function draw() {
+      const box = root.getBoundingClientRect();
+      svg.innerHTML = "";
+      lines.forEach(([l, r]) => {
+        const a = l.getBoundingClientRect(), b = r.getBoundingClientRect();
+        const x1 = a.right - box.left, y1 = a.top + a.height / 2 - box.top, x2 = b.left - box.left, y2 = b.top + b.height / 2 - box.top;
+        const path = document.createElementNS(svgNS, "path");
+        const mx = (x1 + x2) / 2;
+        path.setAttribute("d", `M${x1} ${y1} C ${mx} ${y1}, ${mx} ${y2}, ${x2} ${y2}`);
+        path.setAttribute("fill", "none");
+        path.setAttribute("stroke", getComputedStyle(document.body).getPropertyValue("--accent").trim() || "#8A5F16");
+        path.setAttribute("stroke-width", "2.5");
+        svg.append(path);
+      });
+    }
+    addEventListener("resize", draw);
+    return { reset: () => PT.matcher(root, o) };
   };
 
   // ---------- 小工具 ----------

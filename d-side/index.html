@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>验需求 · AI产品思维 D 面</title>
+<meta name="description" content="AI产品思维 D 面：拿什么证明你判断对了。找北极星指标、用问卷验证分群、把数据往下切、和天花板比、做 A/B 测试。">
+<script>
+  try { var t = JSON.parse(localStorage.getItem("pt.theme")); if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap">
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2317191F'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%235B4E8C'/%3E%3Ccircle cx='16' cy='16' r='1.4' fill='%23F4F0E8'/%3E%3C/svg%3E">
+</head>
+<body data-side="d">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../"><span class="dot" aria-hidden="true"></span>AI产品思维</a>
+    <span class="side-tag">D 面 · 验需求</span>
+    <nav aria-label="页面导航">
+      <a class="hide-sm" href="#tracks">曲目</a>
+      <a class="hide-sm" href="#t06">验证计划</a>
+      <a class="hide-sm" href="#check">自测</a>
+      <span class="sidenav"><a href="../a-side/" title="A 面 · 看见人" aria-label="A 面 · 看见人">A</a><a href="../b-side/" title="B 面 · 做选择" aria-label="B 面 · 做选择">B</a><a href="../c-side/" title="C 面 · 收需求" aria-label="C 面 · 收需求">C</a><a href="../d-side/" title="D 面 · 验需求" aria-label="D 面 · 验需求" aria-current="page">D</a><a href="../studio/" title="Bonus Track · 录音棚" aria-label="Bonus Track · 录音棚">★</a></span>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="切换深浅色"></button>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <video muted loop playsinline preload="none" poster="../assets/loop/vinyl-poster.webp" data-src="../assets/loop/vinyl.mp4"></video>
+    </div>
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">D 面 · 验需求</p>
+        <h1>拿什么证明，<br>你判断对了</h1>
+        <p class="sub">AI产品思维第四课：用数据和实验说话</p>
+        <ol class="goals" aria-label="学完能做到">
+          <li>用两个维度给用户分群，并设计一份不坑人的验证问卷。</li>
+          <li>看数据会往下切、看趋势、和天花板比，找到北极星指标。</li>
+          <li>拿不准的时候，设计一个最小实验或 A/B 测试。</li>
+        </ol>
+        <p class="meta"><span>⏱ 约 55 分钟</span><span>◎ 第二张唱片 · D 面</span></p>
+      </div>
+      <div class="record" role="img" aria-label="唱片封套：一只放大镜举在黑胶唱片上，镜片下的纹路变成了小小的柱状图">
+        <div class="sleeve"><img src="../assets/img/d-cover.webp" alt="" width="900" height="900"></div>
+        <div class="disc" aria-hidden="true">
+          <div class="disc-spin"><div class="label"><span><b>D</b><small>SIDE · 验需求</small></span></div></div>
+          <div class="hole"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track intro" id="tracks">
+    <div class="wrap">
+      <div class="intro-grid">
+        <div class="prose fx">
+          <p class="track-no">写在前面</p>
+          <p>C 面收需求，A 面辨需求，B 面选需求。选好了，就一定对吗？</p>
+          <p>这一面讲最后一步：<strong>拿证据说话</strong>。先找到最该盯着的那个数，再用问卷、数据和实验，一点点验证自己的判断。在动手开发之前发现判断错了，代价最小。</p>
+          <p>故事还是网易云音乐，主角还是产品经理小明。</p>
+        </div>
+        <div class="fx">
+          <p class="track-no">本面曲目</p>
+          <ol class="tracklist">
+            <li><a href="#t01"><span class="no">01</span><span class="t">开场：歌单该看哪个数</span><span class="d">5 分钟</span></a></li>
+            <li><a href="#t02"><span class="no">02</span><span class="t">先分群，再用问卷验证</span><span class="d">10 分钟</span></a></li>
+            <li><a href="#t03"><span class="no">03</span><span class="t">数据要往下切</span><span class="d">8 分钟</span></a></li>
+            <li><a href="#t04"><span class="no">04</span><span class="t">和天花板比，给数据挤水分</span><span class="d">8 分钟</span></a></li>
+            <li><a href="#t05"><span class="no">05</span><span class="t">拿不准，就做实验</span><span class="d">7 分钟</span></a></li>
+            <li><a href="#t06"><span class="no">06</span><span class="t">用到你的点子上：验证计划</span><span class="d">12 分钟</span></a></li>
+            <li><a href="#check"><span class="no">✓</span><span class="t">六道题、八个词</span><span class="d">5 分钟</span></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 01 ============ -->
+  <section class="track" id="t01">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 01 · 开场</p>
+        <h2>歌单该看哪个数</h2>
+        <p class="lede">数据那么多，先找到最该盯着的那一个。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>网易云做歌单的时候，能看的数有好几个：点开歌单播放的比例、下载的比例、收藏的比例、分享的比例。该盯着哪一个？</p>
+          <p>团队最想提高的是<strong>用户留存</strong>：今天来的人，过几天还来不来。于是他们算了一下，这几个数里，哪一个和留存关系最大。</p>
+          <p>你先猜一猜。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/d-t01.webp" alt="插画：夜里，一个人站在山坡上，把一张黑胶唱片举得高高的，像举着指南针，望向天上最亮的那颗星" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab1">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ①</span><span class="lab-title">猜北极星</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab1-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">四个数里，哪一个和“用户过几天还会回来”关系最大？点一张。</p>
+          <div class="metrics" id="metrics" role="group" aria-label="四个歌单指标"></div>
+          <div class="reveal" id="reveal1" aria-live="polite">
+            <h4 id="reveal1-h">是收藏</h4>
+            <p>收藏了一个歌单的人，过几天还会回来再听。随手点开播放，可能听两首就走了；下载和分享的人，又只是少数。</p>
+            <p>于是，首页的歌单推荐就以收藏率为目标来优化。像这样一个最能代表“产品真的帮到了用户”、全队都盯着的数，叫<strong>北极星指标</strong>。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>先想清楚最想提高的是什么，比如留存；再找和它关系最大的那个数，让全队都盯着它。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 02 ============ -->
+  <section class="track" id="t02">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 02 · 问卷</p>
+        <h2>先分群，再用问卷验证</h2>
+        <p class="lede">访谈找方向，问卷来验证。问卷问歪了，结论就是歪的。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>网易云立项的时候，小明先访谈了大约 20 个人，发现有两个维度最能把用户分开：<strong>年龄</strong>，和<strong>对音乐的热爱程度</strong>。接着，他用问卷来验证这个分法。</p>
+          <p>做问卷有这几条讲究：</p>
+          <ul>
+            <li>每一类用户，至少收 50 份。</li>
+            <li>渠道要和人群对上，不是越大越好。</li>
+            <li>题目越少越好：每道题都问“能不能删、能不能合”，删两三轮。</li>
+            <li>先问不用动脑的，由易到难；性别、年龄、收入这类隐私题放到最后。</li>
+            <li>多用选择题，开放题少一点。</li>
+            <li>愿意填问卷的人，多半本来就感兴趣，结果容易偏乐观。</li>
+          </ul>
+          <p>结论对不上也别气馁：在开发之前发现问题，代价最小。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/d-t02.webp" alt="插画：书桌上一张画着田字格的大纸，纸剪的小人被分进四个格子，旁边是一块夹着空白问卷的写字板和一支铅笔" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab2">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ②</span><span class="lab-title">问卷体检</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab2-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">这是一个西语学习 App 写的问卷，8 道题里有 5 道有毛病。给每道题选一个诊断，选对了会显示改好的版本。</p>
+          <div class="sheet">
+            <div class="sheet-head"><b>《小西》用户调查问卷</b><span>感谢你抽出 3 分钟填写！</span></div>
+            <div class="survey" id="survey"></div>
+          </div>
+          <h4 class="sub-h" style="margin-top:24px">最后一步：发到哪里？</h4>
+          <p class="lab-hint">《小西》想知道西语专业的同学需不需要它。</p>
+          <div class="choices" id="channels" role="group" aria-label="投放渠道"></div>
+          <p class="toast" id="channel-msg" style="margin-top:10px"></p>
+          <div class="reveal" id="reveal2" aria-live="polite">
+            <h4>这份问卷，现在能发了</h4>
+            <p>改完以后：隐私题挪到了最后，一道题只问一件事，不带引导，开放题只留最后一道，长题拆短。再发到和目标人群对得上的渠道，每类人至少收 50 份。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>先访谈找出分群的维度，再用问卷验证。题少、由易到难、不带引导、渠道对准人群；真爱粉填的问卷，结果会偏乐观。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 03 ============ -->
+  <section class="track" id="t03">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 03 · 精细化分析</p>
+        <h2>数据要往下切</h2>
+        <p class="lede">总数在涨，不等于一切都好。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>评论总数、点赞总数一直在涨，评论区就没问题了吗？小明会接着往下问：</p>
+          <ul>
+            <li>超过 100 条评论的歌，占多少？</li>
+            <li>点赞是不是集中在少数几条评论上？</li>
+            <li>新的精彩评论，有多少被人看到了？</li>
+            <li>用户之间互相回复的比例有多高？</li>
+          </ul>
+          <p>评论都挤在热门歌下面，可能是<strong>虚假繁荣</strong>；点赞都集中在少数几条上，就是<strong>马太效应</strong>：强的越来越强，新来的没人看见。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/d-t03.webp" alt="插画：一把刀从一个高高的奶油蛋糕上切下一块，外面的奶油又厚又亮，切开才发现里面大半是空的" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab3">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ③</span><span class="lab-title">数据侦探</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab3-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">假设你是评论区的产品经理。这个月的看板上，总数全在涨。点“往下切一层”，一张一张看下去。</p>
+          <div class="dash" aria-label="本月看板">
+            <div class="kpi"><span>评论总数</span><b>1,240 万</b><em>▲ 32%</em></div>
+            <div class="kpi"><span>点赞总数</span><b>8,600 万</b><em>▲ 45%</em></div>
+            <div class="kpi"><span>发过评论的人</span><b>310 万</b><em>▲ 18%</em></div>
+            <div class="kpi"><span>人均评论数</span><b>4.0 条</b><em>▲ 12%</em></div>
+          </div>
+          <div class="drill-bar">
+            <button class="btn primary" type="button" id="drill-btn">往下切一层 ↓</button>
+            <span class="lab-hint" style="margin:0" id="drill-left">还有 4 层</span>
+          </div>
+          <div class="drill" id="drill"></div>
+          <div id="judge" hidden>
+            <h4 class="sub-h" style="margin-top:22px">四层都切开了。评论区现在是……</h4>
+            <div class="choices" id="judge-choices" role="group" aria-label="判断"></div>
+          </div>
+          <div class="reveal" id="reveal3" aria-live="polite">
+            <h4 id="reveal3-h">看起来热闹，其实是虚假繁荣</h4>
+            <p>总数在涨，可评论挤在极少数热门歌下面，赞被少数几条评论拿走，新评论几乎没人看见，大家也很少互相回复。只看总数，这些全藏起来了。</p>
+            <p>往下切一层，问题才露出来；露出来了，才知道下一步该做什么，比如让新的好评论也有机会被看到。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>别只看总数。按歌、按评论、按人往下切，看集中度，看新内容有没有机会：这样才分得清真繁荣和虚假繁荣。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 04 ============ -->
+  <section class="track" id="t04">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 04 · 天花板</p>
+        <h2>和天花板比，给数据挤水分</h2>
+        <p class="lede">不只和对手比，还要和天花板比。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>网易云说，平台上有两万名活跃音乐人，比对手多。可如果把酒吧驻唱、幕后作词作曲的人都算上，中国的音乐人至少有几十万，两万只是一个小数。和对手比，看起来领先；和天花板比，才知道还差得远。</p>
+          <p>业务平稳以后，大盘数据看着都不动。这时要把内容拆细了看：新的趋势，常常藏在某一个细分类别里。</p>
+          <p>别人给你的数字也一样，先挤一挤水分。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/d-t04.webp" alt="插画：一只手把一块大海绵里的水拧进量杯，旁边立着一把长长的尺子，一直伸向很高的天花板" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab4">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ④</span><span class="lab-title">软文挤水分</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab4-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">读这篇软文，把里面的数字填进下面的计算器，看看和经验值比怎么样。</p>
+          <div class="squeeze">
+            <article class="clip">
+              <span class="kick">科技快讯</span>
+              <h5>西语学习 App《小西》用户突破 1000 万！</h5>
+              <p>增速领跑同类产品！截至本月，《小西》累计注册用户已突破 <mark>1000 万</mark>，覆盖全国 300 多所高校。</p>
+              <p>据介绍，目前每天有 <mark>28 万</mark> 人打开《小西》学习，本月共有 <mark>120 万</mark> 人使用过它。新用户里，第二天还回来学习的比例达到 <mark>42%</mark>。</p>
+              <p>团队表示，下一步将继续扩大投放，目标是年底突破 2000 万。</p>
+            </article>
+            <aside class="bench">
+              <b>经验值（大致）</b>
+              <table>
+                <tr><td>日活 ÷ 总用户</td><td>约 5%</td></tr>
+                <tr><td>周活 ÷ 总用户</td><td>约 10%</td></tr>
+                <tr><td>月活 ÷ 总用户</td><td>约 20%</td></tr>
+                <tr><td>次日留存</td><td>约 40%</td></tr>
+                <tr><td>7 日留存</td><td>约 20%</td></tr>
+                <tr><td>30 日留存</td><td>约 10%</td></tr>
+              </table>
+            </aside>
+          </div>
+          <div class="calc" id="calc">
+            <label>总用户<span class="num"><input type="text" inputmode="decimal" data-k="total" aria-label="总用户（万）"><span class="unit">万</span></span></label>
+            <label>日活<span class="num"><input type="text" inputmode="decimal" data-k="dau" aria-label="日活（万）"><span class="unit">万</span></span></label>
+            <label>月活<span class="num"><input type="text" inputmode="decimal" data-k="mau" aria-label="月活（万）"><span class="unit">万</span></span></label>
+            <label>次日留存<span class="num"><input type="text" inputmode="decimal" data-k="d1" aria-label="次日留存（%）"><span class="unit">%</span></span></label>
+          </div>
+          <div class="gauges" id="gauges"></div>
+          <p class="toast" id="calc-msg" style="margin-top:14px"></p>
+          <div class="reveal" id="reveal4" aria-live="polite">
+            <h4>1000 万里，有不少水分</h4>
+            <p>日活只有总用户的 2.8%，月活 12%，都远低于经验值：1000 万人里，大部分注册了就没再来。次日留存 42% 倒是不错，说明新来的人里，确实有人喜欢它。</p>
+            <p>“累计注册用户”是一个只涨不跌的数。真正该看的，是日活、月活和留存；再和天花板比一比：全国学西语的人有多少，它占了几成？</p>
+          </div>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>和天花板比，才知道还有多大空间。看到漂亮的总数，先算一算日活、月活和留存，和经验值放在一起比。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 05 ============ -->
+  <section class="track" id="t05">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 05 · 实验</p>
+        <h2>拿不准，就做实验</h2>
+        <p class="lede">大胆假设，小心求证。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>做产品，大多数决定只有五成把握。与其为两个方案争个不停，不如用最低的成本做个实验：一个简陋的原型，或者一次 A/B 测试。</p>
+          <p><strong>A/B 测试</strong>就是把用户随机分成两组，一组用老办法，一组用新办法，其他都一样，过一段时间看哪一组的数更好。数说了算，不用再争。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/d-t05.webp" alt="插画：两盆一模一样的小苗并排放着，各自在一盏台灯下，中间放着一个本子和一块秒表" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab5">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ⑤</span><span class="lab-title">设计一个 A/B 测试</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab5-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">团队想知道：首页的歌单推荐，换成按收藏率排，用户会不会更常回来？把实验的四个格子填好，再点“检查”。</p>
+          <div class="ab-scene">
+            <div><b>A 组 · 老办法</b>首页歌单按播放量排序</div>
+            <div><b>B 组 · 新办法</b>首页歌单按收藏率排序</div>
+          </div>
+          <div class="abt" id="abt"></div>
+          <div class="actions" style="border-top:0;padding-top:0">
+            <button class="btn primary" type="button" id="ab-check">检查</button>
+            <span class="toast" id="ab-msg"></span>
+          </div>
+          <div class="reveal" id="reveal5" aria-live="polite">
+            <h4>这个实验可以开跑了</h4>
+            <p>一次只改排序这一处，两组用户随机分、人数够，看收藏率和 7 日留存，跑满一周。跑完就知道：按收藏率排，用户是不是更愿意收藏、更常回来。</p>
+            <p>拿不准的时候，这样一个小实验，比开十次会都管用。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>一次只改一处，指标对准目标，两组随机分、人数够，至少跑满一周。用最低的成本，验证最拿不准的那个判断。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 06 ============ -->
+  <section class="track" id="t06">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 06 · 用到你的点子上</p>
+        <h2>我的验证计划</h2>
+        <p class="lede">给你的点子定一颗北极星，再设计一次验证。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>接着用你在 C 面需求池里的点子，或者从三张点子卡里选一张。</p>
+          <p>依次写下：北极星指标、分群的两个维度、3 道问卷题、投放渠道，和一个最小实验。写问卷题的时候，页面会帮你对照刚才的规则检查。</p>
+          <p>写完可以下载成图片。工作坊上，你们组会用它来检验 AI 做出来的第一版。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/d-t06.webp" alt="插画：俯视的木托盘里整齐摆着一只放大镜、一把小尺子、一块秒表、一叠空白卡片和一支铅笔" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab6">
+        <div class="lab-head"><span class="lab-tag">动手 ⑥</span><span class="lab-title">我的验证计划</span></div>
+        <div class="lab-body">
+          <h4 class="sub-h">你的点子</h4>
+          <div class="ideas" id="ideas" role="group" aria-label="选择点子"></div>
+          <div class="form" id="vform">
+            <div class="field">
+              <label for="v-star">北极星指标</label>
+              <p class="help">最能说明“它真的帮到了用户”的那一个数。</p>
+              <input type="text" id="v-star" data-k="star">
+              <textarea rows="2" data-k="starWhy" aria-label="为什么是它"></textarea>
+            </div>
+            <div class="field">
+              <span class="lbl">分群的两个维度</span>
+              <p class="help">你会按哪两个维度，把用户分成几类？</p>
+              <div class="two">
+                <input type="text" data-k="dim1" aria-label="维度一">
+                <input type="text" data-k="dim2" aria-label="维度二">
+              </div>
+            </div>
+            <div class="field">
+              <span class="lbl">3 道问卷题</span>
+              <p class="help">由易到难排好。页面会对照规则检查：引导词、隐私题的位置、一题两问、题目长短、开放题。</p>
+              <div class="qrows" id="qrows"></div>
+            </div>
+            <div class="field">
+              <label for="v-channel">投放渠道</label>
+              <p class="help">发到哪里，才能找到你要的那几类人？每类至少 50 份。</p>
+              <input type="text" id="v-channel" data-k="channel">
+            </div>
+            <div class="field">
+              <span class="lbl">一个最小实验</span>
+              <p class="help">一个简陋的原型，或者一次 A/B 测试。</p>
+              <div class="four">
+                <label>改什么 / 做什么<input type="text" data-k="exWhat"></label>
+                <label>看哪个数<input type="text" data-k="exMetric"></label>
+                <label>找多少人<input type="text" data-k="exWho"></label>
+                <label>跑多久<input type="text" data-k="exLong"></label>
+              </div>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn primary" type="button" id="v-png">⬇ 下载成图片</button>
+            <button class="btn" type="button" id="v-copy">复制文字</button>
+            <button class="btn" type="button" id="v-clear">清空</button>
+            <span class="saved" id="v-saved" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track" id="check">
+    <div class="wrap">
+      <header class="track-head fx"><p class="track-no">收尾</p><h2>六道题，检查一下</h2></header>
+      <div id="quiz" class="fx"></div>
+      <header class="track-head fx" style="margin-top:clamp(48px,7vw,80px)"><h2>八个词，一页看完</h2></header>
+      <dl class="glossary fx">
+        <div class="term"><dt>北极星指标</dt><dd>最能代表“产品真的帮到了用户”的那一个数，全队都盯着它。</dd></div>
+        <div class="term"><dt>留存率</dt><dd>今天来的人，过一段时间还回来的比例。次日、7 日、30 日留存最常看。</dd></div>
+        <div class="term"><dt>日活 / 月活</dt><dd>一天里、一个月里用过产品的人数。拿它们除以总用户，能看出有多少水分。</dd></div>
+        <div class="term"><dt>用户分群</dt><dd>按几个维度把用户分成几类，比如年龄和对音乐的热爱程度。</dd></div>
+        <div class="term"><dt>问卷偏差</dt><dd>题目、顺序、渠道都会让结果走样；愿意填问卷的人，本来就更感兴趣。</dd></div>
+        <div class="term"><dt>精细化分析</dt><dd>不只看总数，把数据按内容、按人往下切，找出藏起来的问题和趋势。</dd></div>
+        <div class="term"><dt>马太效应</dt><dd>强的越来越强：赞和关注都集中到少数人身上，新来的没人看见。</dd></div>
+        <div class="term"><dt>A/B 测试</dt><dd>用户随机分两组，只改一处，看哪组的数更好。数说了算。</dd></div>
+      </dl>
+      <div style="margin-top:clamp(48px,7vw,80px)" class="fx">
+        <a class="next-side" href="../studio/" style="--accent:var(--ink)">
+          <img src="../assets/img/ws-cover.webp" alt="" width="120" height="120">
+          <div><span class="k">四面听完，进录音棚</span><b>Bonus Track · 录音棚</b><span>90 分钟工作坊：和组员一起，从一页纸做到 AI 做出的第一版。</span></div>
+          <span class="go">进录音棚 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap"><p>《AI产品思维》第四课 · 26 Fall 生成式人工智能应用基础 and AI 语言工具与实操</p></div>
+</footer>
+
+<script src="../assets/course.js"></script>
+<script src="labs.js"></script>
+</body>
+</html>

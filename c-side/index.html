@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>收需求 · AI产品思维 C 面</title>
+<meta name="description" content="AI产品思维 C 面：需求从哪来，怎么理成一张图。多渠道收需求、按使用环节理需求池、在长尾里找机会、给版本排清单。">
+<script>
+  try { var t = JSON.parse(localStorage.getItem("pt.theme")); if (t === "dark" || t === "light") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap">
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2317191F'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%238A5F16'/%3E%3Ccircle cx='16' cy='16' r='1.4' fill='%23F4F0E8'/%3E%3C/svg%3E">
+</head>
+<body data-side="c">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../"><span class="dot" aria-hidden="true"></span>AI产品思维</a>
+    <span class="side-tag">C 面 · 收需求</span>
+    <nav aria-label="页面导航">
+      <a class="hide-sm" href="#tracks">曲目</a>
+      <a class="hide-sm" href="#t06">需求池</a>
+      <a class="hide-sm" href="#check">自测</a>
+      <span class="sidenav"><a href="../a-side/" title="A 面 · 看见人" aria-label="A 面 · 看见人">A</a><a href="../b-side/" title="B 面 · 做选择" aria-label="B 面 · 做选择">B</a><a href="../c-side/" title="C 面 · 收需求" aria-label="C 面 · 收需求" aria-current="page">C</a><a href="../d-side/" title="D 面 · 验需求" aria-label="D 面 · 验需求">D</a><a href="../studio/" title="Bonus Track · 录音棚" aria-label="Bonus Track · 录音棚">★</a></span>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="切换深浅色"></button>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <video muted loop playsinline preload="none" poster="../assets/loop/vinyl-poster.webp" data-src="../assets/loop/vinyl.mp4"></video>
+    </div>
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">C 面 · 收需求</p>
+        <h1>需求从哪来，<br>怎么理成一张图</h1>
+        <p class="sub">AI产品思维第三课：把需求收全、理清</p>
+        <ol class="goals" aria-label="学完能做到">
+          <li>不带情绪地收需求，知道不同渠道的用户各有什么特点。</li>
+          <li>按用户使用产品的环节，把需求理成一张地图。</li>
+          <li>在长尾需求里找到别人没做的机会，并给一个版本排出需求清单。</li>
+        </ol>
+        <p class="meta"><span>⏱ 约 50 分钟</span><span>◎ 第二张唱片 · C 面</span></p>
+      </div>
+      <div class="record" role="img" aria-label="唱片封套：一只捕虫网在空中兜住许多纸条和对话气泡">
+        <div class="sleeve"><img src="../assets/img/c-cover.webp" alt="" width="900" height="900"></div>
+        <div class="disc" aria-hidden="true">
+          <div class="disc-spin"><div class="label"><span><b>C</b><small>SIDE · 收需求</small></span></div></div>
+          <div class="hole"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track intro" id="tracks">
+    <div class="wrap">
+      <div class="intro-grid">
+        <div class="prose fx">
+          <p class="track-no">写在前面</p>
+          <p>A 面讲怎么辨需求，B 面讲怎么选需求。可需求一开始是从哪来的？</p>
+          <p>这一面往前走一步：怎么把四面八方的需求<strong>收全</strong>，再<strong>理成一张看得清的图</strong>。收得越全、理得越清，后面判断起来就越有底。</p>
+          <p>故事还是网易云音乐，主角还是产品经理小明。</p>
+        </div>
+        <div class="fx">
+          <p class="track-no">本面曲目</p>
+          <ol class="tracklist">
+            <li><a href="#t01"><span class="no">01</span><span class="t">开场：每天一小时</span><span class="d">6 分钟</span></a></li>
+            <li><a href="#t02"><span class="no">02</span><span class="t">什么人提的，都先收下</span><span class="d">6 分钟</span></a></li>
+            <li><a href="#t03"><span class="no">03</span><span class="t">按使用环节，理成一张图</span><span class="d">8 分钟</span></a></li>
+            <li><a href="#t04"><span class="no">04</span><span class="t">长尾里有宝</span><span class="d">8 分钟</span></a></li>
+            <li><a href="#t05"><span class="no">05</span><span class="t">给下一个版本排清单</span><span class="d">6 分钟</span></a></li>
+            <li><a href="#t06"><span class="no">06</span><span class="t">用到你的点子上：我的需求池</span><span class="d">12 分钟</span></a></li>
+            <li><a href="#check"><span class="no">✓</span><span class="t">六道题、八个词</span><span class="d">5 分钟</span></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 01 ============ -->
+  <section class="track" id="t01">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 01 · 开场</p>
+        <h2>每天一小时</h2>
+        <p class="lede">收需求的时候，你是情报员，不是法官。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>用户越来越多，小明还是每天花一个小时看用户反馈。不只他一个人：团队里每个人都会去产品里、微博、贴吧、知乎、微信群，回复用户的问题和建议。</p>
+          <p>后来，不少用户在知乎、微博上专门夸网易云“重视用户的声音”，逢人就推荐。认真对待反馈，本身就在攒口碑。</p>
+          <p>不同渠道来的人，也不一样。先认一认：</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/c-t01.webp" alt="插画：清晨的书桌上，一台老式收音机竖着长长的天线，许多对话气泡从四面八方飘向天线" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab1">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ①</span><span class="lab-title">渠道连连看</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab1-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">先点左边的渠道，再点右边对应的用户特点。手机上也一样点。</p>
+          <div id="matcher1"></div>
+          <div class="reveal" id="reveal1" aria-live="polite">
+            <h4>渠道越多，看到的用户越全</h4>
+            <p>只看一个渠道，就只听到一种人的声音。产品内反馈的多是重度用户，他们的意见很宝贵，却不代表刚来的新用户。</p>
+            <p>而且每个反馈渠道，同时也是用户接触你品牌的地方。认真回应，就是在宣传产品。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>收需求时，你是情报员：先收全，判断留到后面。认真回应用户，本身就在攒口碑。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 02 ============ -->
+  <section class="track" id="t02">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 02 · 不带情绪</p>
+        <h2>什么人提的，都先收下</h2>
+        <p class="lede">老板的需求、同事的随口一说、最不靠谱的吐槽，都先收下。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>收集需求的时候，不管提的人是用户、同事、老板、朋友，还是毫不相干的人，都先收下。要把“需求”和“提需求的人”分开：身份、动机，留到分析的时候再看。</p>
+          <p>要是和老板关系不好，总觉得老板提的需求不靠谱，那就先调整心态：把老板当成一个普通用户。</p>
+          <p>就算是一时最不靠谱的需求，等时间和环境变了，也可能变得有用。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/c-t02.webp" alt="插画：两只手拉起一张渔网，网里兜满了大大小小的纸条，有揉皱的、撕破的，还有一只纸飞机" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab2">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ②</span><span class="lab-title">一天的反馈</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab2-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">今天收到 12 条反馈。每条只能做一件事：收进需求池，或者删掉。</p>
+          <div class="feed">
+            <div id="feed" style="display:grid;gap:10px"></div>
+            <div class="jar"><b id="jar-n">0</b><span>需求池里的需求</span><p class="lab-hint" id="jar-left" style="margin:8px 0 0">还剩 12 条没处理</p></div>
+          </div>
+          <div class="reveal" id="reveal2" aria-live="polite">
+            <h4>需求池里，一条都不该少</h4>
+            <p>每一条“看起来没用”的反馈后面，都可能藏着一个真麻烦，或者一个后来的好功能。收的时候只管收，判断留到下一步：用 A 面的三招去辨，用 B 面的三个圈去选。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>把需求和提需求的人分开。先收全，再判断；最不靠谱的那条，换个时间也可能有用。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 03 ============ -->
+  <section class="track" id="t03">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 03 · 理需求</p>
+        <h2>按使用环节，理成一张图</h2>
+        <p class="lede">按用户和产品打交道的每一个环节，把需求理成一张地图。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>收来的需求乱成一堆，怎么办？小明的办法是按用户使用产品的环节来分。网易云早期分成六个环节：<strong>生产音乐、发现音乐、管理音乐、听音乐、讨论和分享音乐</strong>，还有<strong>音乐的其他消费</strong>，比如演唱会、明星周边。</p>
+          <p>其中“发现音乐”是网易云切入市场的重点。他习惯用脑图来管理需求。理清之后，产品怎样一步步满足用户、影响用户，就看得清清楚楚。每一格还可以继续往下分，分到能看见创新点为止。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/c-t03.webp" alt="插画：一棵从黑胶唱片里长出来的树，形状像脑图，六根主枝上挂满纸条" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab3">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ③</span><span class="lab-title">需求地图</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab3-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">把 15 条需求放进对应的环节。电脑上可以拖；手机上先点需求，再点环节。</p>
+          <div id="sorter3"></div>
+          <div class="reveal" id="reveal3" aria-live="polite">
+            <h4>看那一格：讨论 & 分享</h4>
+            <p>理完一看，“讨论和分享音乐”这一格，当时几乎没有哪个产品认真做过，最初的需求只是把喜欢的歌分享到社交网络。网易云后来的评论区、歌单分享、歌词图片，都长在这一格里。</p>
+            <p>需求理成地图，空着的格子就藏不住了。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>按使用环节理需求，产品怎样一步步影响用户就看清了。分得越细，越容易看到别人没看见的格子。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 04 ============ -->
+  <section class="track" id="t04">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 04 · 二八定律</p>
+        <h2>长尾里有宝</h2>
+        <p class="lede">热门需求，对手早就做了；创新常藏在长尾里。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>需求也符合二八定律：80% 的人提的，都是那 20% 的需求。越是主流的需求，越早被大家挖空；还没被发掘的，才可能是创新所在。</p>
+          <p>导入歌单就是这样：只有几个人在说，和被提了上千次的排行榜比，差了成百上千倍，却成了网易云最关键的一招。</p>
+          <p>当然，长尾也不全是宝。只按被提的次数排需求，等于把判断交给了计数器。那还要产品经理干什么？</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/c-t04.webp" alt="插画：一只淘金盘在浅浅的河水上筛沙，盘里大多是沙子，只有两颗小金块在发光" width="1200" height="800" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab4">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ④</span><span class="lab-title">长尾淘金</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab4-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">这是 24 条需求，按被提的次数从高到低排。点柱子看看是什么需求，在右边的长尾里挑出两块“金子”：独一无二、能打中用户的大麻烦、对手做不了。</p>
+          <div class="tail" id="tail" role="group" aria-label="需求柱状图：按被提次数从高到低"></div>
+          <div class="tail-axis" aria-hidden="true"><span>← 被提得多</span><span>被提得少 →</span></div>
+          <div class="tail-info" id="tail-info" aria-live="polite"><span class="lab-hint" style="margin:0">点任意一根柱子。</span></div>
+          <div class="picks">
+            <button type="button" class="slot" id="pick0" disabled>金子 1</button><button type="button" class="slot" id="pick1" disabled>金子 2</button>
+            <button class="btn" type="button" id="pick-btn" disabled>选它当金子</button>
+            <button class="btn primary" type="button" id="reveal-btn" disabled>揭晓</button>
+          </div>
+          <div class="reveal" id="reveal4" aria-live="polite">
+            <h4 id="reveal4-h"></h4>
+            <p>两块金子是“把别的 App 里收藏的歌单导进来”和“看看别人听这首歌时，都想起了什么”。前者打中了换 App 时最大的麻烦：几百首收藏带不走，而原来的 App 绝不会帮用户搬家；后者在听歌之外开出了一个新维度：共鸣，也就是 A 面讲过的评论区。它们被提的次数都很少。</p>
+            <p>长尾里其他的需求，有的不错但不是大麻烦，有的离题，有的受众太小。长尾值得多花精力，但不是每一条都是宝。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>主流需求要做好，长尾需求要多花精力去看。别把判断交给计数器：次数只说明多少人提，说明不了值不值得做。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 05 ============ -->
+  <section class="track" id="t05">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 05 · 排版本</p>
+        <h2>给下一个版本排清单</h2>
+        <p class="lede">体验修补、主打亮点、长远布局：一个版本里，三类都要有。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>考虑一个版本的重点时，小明会把需求分成三类：<strong>体验修补</strong>，把已有的功能修顺；<strong>主打亮点</strong>，这个版本拿出去最值得说的东西；<strong>长远布局</strong>，现在看不出效果、却在为一两年后攒力量的事。这样分，和运营、市场的同事沟通起来也清楚。</p>
+          <p>他还有一条规矩：花在眼前需求和长期目标上的精力，至少要一比一。网易云的评论功能很早就上线了，一开始没火；正是攒了那段时间，后来才能爆发。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/c-t05.webp" alt="插画：软木板上贴着三列纸卡，一只手正把一张卡移到第三列，桌上放着一架小天平" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab5">
+        <div class="lab-head">
+          <span class="lab-tag">动手 ⑤</span><span class="lab-title">下个版本</span><span class="spacer"></span>
+          <button class="btn" type="button" id="lab5-reset">↺ 重来</button>
+        </div>
+        <div class="lab-body">
+          <p class="lab-hint">把 9 条需求分进三类。每张卡上标了大约要花几个人天；下面的天平按人天算：眼前的（修补 + 亮点）和长远布局，各占多少精力。</p>
+          <div id="sorter5"></div>
+          <div class="ratio" aria-live="polite"><span>眼前 <b id="r-short">0</b> 人天</span><span class="track2"><i id="r-bar" style="width:50%"></i><em></em></span><span>长远 <b id="r-long">0</b> 人天</span></div>
+          <p class="ratio-note" id="r-note"></p>
+        </div>
+      </div>
+      <aside class="takeaway fx"><div><h3>要点</h3><p>一个版本里，修补、亮点、布局三类都要有。眼前的和长远的，精力至少一比一，产品的长期目标才落得了地。</p></div></aside>
+    </div>
+  </section>
+
+  <!-- ============ TRACK 06 ============ -->
+  <section class="track" id="t06">
+    <div class="wrap">
+      <header class="track-head fx">
+        <p class="track-no">TRACK 06 · 用到你的点子上</p>
+        <h2>我的需求池</h2>
+        <p class="lede">给你的点子收一池需求，再理成一张图。</p>
+      </header>
+      <div class="story">
+        <div class="prose fx">
+          <p>选一个点子：可以是你在 A 面写体检卡时用的那个，也可以从三张点子卡里挑。</p>
+          <p>至少收 8 条需求，而且要来自不同的地方：自己想的、访谈同学听到的、网上评论里看到的……然后把它们放进使用环节，标出一块长尾里的金子，再给下个版本排一排。</p>
+          <p>写完可以下载成图片。工作坊上，你们组会接着用这一池需求。</p>
+        </div>
+        <figure class="fx">
+          <img src="../assets/img/c-t06.webp" alt="插画：木桌上一只装满折叠纸条的大玻璃罐，旁边放着一支铅笔和一本翻开的小本子" width="1400" height="934" loading="lazy">
+        </figure>
+      </div>
+      <div class="lab fx" id="lab6">
+        <div class="lab-head"><span class="lab-tag">动手 ⑥</span><span class="lab-title">我的需求池</span></div>
+        <div class="lab-body">
+          <h4 class="sub-h">你的点子</h4>
+          <div class="ideas" id="ideas" role="group" aria-label="选择点子"></div>
+          <div class="form">
+            <div class="field">
+              <label for="p-name">名字</label>
+              <input type="text" id="p-name">
+            </div>
+            <div class="field">
+              <span class="lbl">使用环节</span>
+              <p class="help">用户用你的工具，会经过哪几个环节？最多五个，可以改。</p>
+              <div class="stages-edit" id="stages"></div>
+            </div>
+            <div class="field">
+              <span class="lbl">需求池</span>
+              <p class="help">每行一条需求：写下需求，选来源、环节和它在下个版本里的类别。点 ★ 标出你在长尾里找到的那块金子（只能标一条）。</p>
+              <div class="pool-rows" id="rows"></div>
+              <div style="margin-top:10px"><button class="btn" type="button" id="add-row">＋ 加一行</button></div>
+            </div>
+            <div class="field">
+              <span class="lbl">检查一下</span>
+              <div class="ratio"><span>眼前 <b id="m-short">0</b> 条</span><span class="track2"><i id="m-bar" style="width:50%"></i><em></em></span><span>长远 <b id="m-long">0</b> 条</span></div>
+              <p class="ratio-note" id="m-note"></p>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn primary" type="button" id="pool-png">⬇ 下载成图片</button>
+            <button class="btn" type="button" id="pool-copy">复制文字</button>
+            <button class="btn" type="button" id="pool-clear">清空</button>
+            <span class="saved" id="pool-saved" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="track" id="check">
+    <div class="wrap">
+      <header class="track-head fx"><p class="track-no">收尾</p><h2>六道题，检查一下</h2></header>
+      <div id="quiz" class="fx"></div>
+      <header class="track-head fx" style="margin-top:clamp(48px,7vw,80px)"><h2>八个词，一页看完</h2></header>
+      <dl class="glossary fx">
+        <div class="term"><dt>需求池</dt><dd>收来的所有需求放在一起的地方。先收全，再判断。</dd></div>
+        <div class="term"><dt>反馈渠道</dt><dd>产品内反馈、微博、贴吧、知乎、微信群……每个渠道的用户都不一样。</dd></div>
+        <div class="term"><dt>使用环节</dt><dd>用户和产品打交道的一步步：比如音乐的生产、发现、管理、收听、分享。</dd></div>
+        <div class="term"><dt>脑图</dt><dd>从一个中心往外分支的图，适合把需求一层层理清楚。</dd></div>
+        <div class="term"><dt>二八定律</dt><dd>80% 的人提的是 20% 的需求。热门需求最容易被对手做完。</dd></div>
+        <div class="term"><dt>长尾需求</dt><dd>提的人少的那一长串需求。不全是宝，但创新常藏在这里。</dd></div>
+        <div class="term"><dt>版本三类</dt><dd>体验修补、主打亮点、长远布局。一个版本里三类都要有。</dd></div>
+        <div class="term"><dt>长期目标</dt><dd>一两年才看得到效果的方向。花在它身上的精力，至少和眼前一样多。</dd></div>
+      </dl>
+      <div style="margin-top:clamp(48px,7vw,80px)" class="fx">
+        <a class="next-side" href="../a-side/" style="--accent:var(--red)">
+          <img src="../assets/img/a-cover.webp" alt="" width="120" height="120">
+          <div><span class="k">收齐了，接着辨</span><b>A 面：用户说的，不一定是用户要的</b><span>需求池里的每一条，都值得用三招再看一遍。</span></div>
+          <span class="go">播放 A 面 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap"><p>《AI产品思维》第三课 · 26 Fall 生成式人工智能应用基础 and AI 语言工具与实操</p></div>
+</footer>
+
+<script src="../assets/course.js"></script>
+<script src="labs.js"></script>
+</body>
+</html>
