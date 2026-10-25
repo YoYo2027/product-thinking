@@ -422,9 +422,12 @@
       lint();
     }
     let timer = 0;
+    // 关页面前，把还没来得及存的改动存上
+    addEventListener("pagehide", () => { if (timer) { clearTimeout(timer); timer = 0; PT.store.set(KEY, state); } });
     function save() {
       clearTimeout(timer);
       timer = setTimeout(() => {
+        timer = 0;
         const ok = PT.store.set(KEY, state);
         const t = new Date();
         saved.textContent = ok ? "已自动保存 " + String(t.getHours()).padStart(2, "0") + ":" + String(t.getMinutes()).padStart(2, "0") : "这个浏览器存不了草稿，记得复制或下载";
